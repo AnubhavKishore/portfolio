@@ -1,0 +1,85 @@
+.project{
+    height: 100vh;
+    .content{
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        .header{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            text-align: center;
+            .head{
+                
+            }
+            
+            .intro{
+               
+            }
+        }
+
+        .slider{
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .each-slide{
+                display: flex;
+                gap: 40px;
+                width: 100%;
+                padding: 0px 10px;
+                
+                .left{
+                    flex: 1;
+                    padding: 10px;
+                    img{
+                        width:100%;
+                       
+
+
+                    }
+
+                }
+
+                .right{
+                    display: flex;
+                    flex-direction: column;
+
+                    justify-content: center;
+                    gap: 30px;
+                    flex: 1;
+
+                    .heading{
+                        .head{
+                            font-size: var(--h3-font-size);
+                        }
+                    }
+
+                    .mid{
+                        display: flex;
+                        .desc{
+
+                        }
+                    }
+
+                }
+            }
+
+            .arrow{
+                
+                i{
+                    color: var(--prim-col);
+                    
+
+                    font-size: var(--uil0-font-size);
+                }
+            }
+
+
+
+
+        }
+
+    }
+}

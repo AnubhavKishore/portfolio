@@ -32,11 +32,21 @@
                     
                     a{
                         font-size:var(--normal-font-size);
+                        font-weight: 600;
                         padding: 7px 15px;
+                        transition: all .1s ease-out;
 
+                        
+                        &:hover{
+                            
+                            color: var(--prim-col);
+                        }
                     }
+
                 }
             }
+
+            
 
 
     

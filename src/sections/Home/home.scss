@@ -1,4 +1,5 @@
 .Home {
+  height: 95vh;
   .content {
     display: flex;
 
@@ -6,20 +7,66 @@
     height: 80vh;
 
     .left {
-       flex-direction: column;
-        flex: 1;
-        gap: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1;
+      gap: 50px;
 
-        .details{
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+
+        justify-content: flex-start;
+        .social {
+          display: flex;
+
+          ul {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            gap: 20px;
+            .uil-github {
+              color: #00405d;
+            }
+            .uil-linkedin {
+              color: #0077b5;
+            }
 
-        }
-        .social{
-            
+            .uil-twitter {
+              color: #55acee;
+            }
+
+            #uil-instagram-alt {
+              background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+              -webkit-background-clip: text;
+                      
+                  background-clip: text;
+              -webkit-text-fill-color: transparent;
+              
+              
+              
+            }
+            #uil-instagram-alt:hover {
+              -webkit-text-fill-color:var(--prim-col);
+            }
+            .uil2:hover {
+              color: var(--prim-col);
+            }
+          }
         }
 
+        .buttons {
+          display: flex;
+          gap: 20px;
+        }
+      }
     }
 
     .right {

@@ -20,7 +20,7 @@ function Navbar() {
                             <li><a href="#" className='skills' id='skills' >Skills</a></li>
                             <li><a href="#" className='contact me' id='contact me' >Contact me</a></li>
                         </ul>
-                        <i id="dark-icon" class="uil uil-moon"></i>
+                        <i id="dark-icon" className="uil uil-moon"></i>
                     </div>
 
 

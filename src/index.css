@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Carter+One&family=Domine:wght@500&family=Merriweather&family=Playfair+Display:wght@500&family=Poppins:wght@400;500&family=Roboto+Slab:wght@500&display=swap');
-
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --header-height: 4rem;
 
@@ -8,8 +10,7 @@
   
   
   
-  --prim-col: hsl(var(--hue-color), 69%, 61%);
-
+  
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -23,24 +24,20 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   
   
-
-  --small-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: 1.125rem;
-
-
+  
+  
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
-
+  
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
-
+  
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
-
+  
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -49,15 +46,23 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
-
-
-
-
-
-
+  
+  --small-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.33rem;
+  --normal-font-size: 1.125rem;
+  
+  
+  
+  --prim-col: hsl(var(--hue-color), 69%, 61%);
+  --prim-hover-col: hsl(var(--hue-color),  53%, 50%);
+  --prim-active-col: hsl(var(--hue-color), 100%, 72%);
+  
+  --white-col: #fff;
+  
   --h1-col:#212121;
   --btn-col:#212121;
-  --h2-col:#626262;
+  --allh-col:#808080;
   --para-col:#888;
   
   
@@ -69,10 +74,13 @@
   
   --big-font-size: 2rem;
   --uil-font-size:1.35rem;
+  --uil2-font-size:2.1rem;
+  --uil0-font-size:2.6rem;
   --btn-font-size:1.33rem;
 }
 
 * {
+  user-select:none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -85,7 +93,7 @@ h1{
   
 }
 h2,h3,h4,h5,h6{
-  color: var(--h2-col);
+  color: var(--allh-col);
   font-family: var(--h2-font) ;
 }
 p{
@@ -93,17 +101,30 @@ p{
   font-family: var(--para-font) ;
 }
 
-.uil{
-  font-size: var( --uil-font-size);
-  cursor: pointer;
-  text-align: center;
-}
 
 a{
   color: black;
 }
 
 
+li{
+  display: inline;
+}
+
+
+.uil{
+  font-size: var( --uil-font-size);
+  cursor: pointer;
+  text-align: center;
+}
+
+.uil2{
+   
+ 
+  font-size: var( --uil2-font-size);
+  cursor: pointer;
+  text-align: center;
+}
 
 
 
@@ -138,8 +159,10 @@ a{
   align-items: center;
   justify-content: center;
   width: fit-content;
+  gap: 10px;
+  cursor: pointer;
 
-  padding: 7px 15px;
+  padding: 4.5px 15px 7px 15px;
   
   border-radius: 4px;
   font-family: var(--h1-font);
@@ -153,3 +176,11 @@ a{
   background-color: var(--prim-col);
   color: white;
 }
+
+.btn-prim:hover{
+  background-color: var(--prim-hover-col);
+}
+.btn-prim:active{
+  background-color: var(--prim-active-col);
+}
+
