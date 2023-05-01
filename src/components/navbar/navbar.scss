@@ -1,0 +1,47 @@
+.navbar{
+    height: var(--header-height);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px black;
+    .content{
+        display: flex;
+        height:100%;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    
+        .left{
+            h2{
+                display: inline;
+            }
+    
+        }
+        .right{
+            display: flex;
+            font-family: 'Domine', sans-serif;
+            height: 100%;
+            align-items: center;
+
+            ul{
+                display: flex;
+                gap: 10px;
+                overflow: none;
+                margin: 0px 4px;
+
+                li{
+                    display: inline;
+                    
+                    a{
+                        font-size:var(--normal-font-size);
+                        padding: 7px 15px;
+
+                    }
+                }
+            }
+
+
+    
+        }
+
+    }
+
+}

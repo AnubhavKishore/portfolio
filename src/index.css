@@ -1,13 +1,155 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Carter+One&family=Domine:wght@500&family=Merriweather&family=Playfair+Display:wght@500&family=Poppins:wght@400;500&family=Roboto+Slab:wght@500&display=swap');
+
+:root {
+  --header-height: 4rem;
+
+  --hue-color: 250;
+
+  
+  
+  
+  --prim-col: hsl(var(--hue-color), 69%, 61%);
+
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  
+  
+
+  --small-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1.125rem;
+
+
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+
+
+
+
+
+  --h1-col:#212121;
+  --btn-col:#212121;
+  --h2-col:#626262;
+  --para-col:#888;
+  
+  
+  --h1-font: 'Roboto Slab', serif;
+  --h2-font: 'Merriweather', serif;
+  --para-font: "Poppins", sans-serif;
+
+
+  
+  --big-font-size: 2rem;
+  --uil-font-size:1.35rem;
+  --btn-font-size:1.33rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+h1{
+  color: var(--h1-col);
+  font-family: var(--h1-font);
+  
+}
+h2,h3,h4,h5,h6{
+  color: var(--h2-col);
+  font-family: var(--h2-font) ;
+}
+p{
+  color: var(--para-col);
+  font-family: var(--para-font) ;
+}
+
+.uil{
+  font-size: var( --uil-font-size);
+  cursor: pointer;
+  text-align: center;
+}
+
+a{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin:0px auto;
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-link{
+  cursor:pointer;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+
+  padding: 7px 15px;
+  
+  border-radius: 4px;
+  font-family: var(--h1-font);
+  font-size:var(--btn-font-size);
+  
+  
+}
+
+.btn-prim{
+  
+  background-color: var(--prim-col);
+  color: white;
 }

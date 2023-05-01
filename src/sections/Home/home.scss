@@ -1,0 +1,35 @@
+.Home {
+  .content {
+    display: flex;
+
+    width: 100%;
+    height: 80vh;
+
+    .left {
+       flex-direction: column;
+        flex: 1;
+        gap: 20px;
+
+        .details{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .social{
+            
+        }
+
+    }
+
+    .right {
+      flex: 1;
+
+      .profile-img {
+        img {
+          height: 300px;
+        }
+      }
+    }
+  }
+}
