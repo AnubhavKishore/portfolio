@@ -1,4 +1,3 @@
-
 import Footer from "./components/footer/Footer.js";
 import Navbar from "./components/navbar/Navbar";
 import About from "./sections/About/About";
@@ -7,22 +6,25 @@ import Home from "./sections/Home/Home";
 import Project from "./sections/Projects/Project";
 import Skills from "./sections/skills/Skills";
 
+import './App.scss'
+
 function App() {
-  
+
   return (
-   <>
-    <Navbar/>
+    <>
+      <Navbar />
+      <main className="all-sections">
+        <Home />
+        <About />
+        <Project />
+        <Skills />
+        <Contact />
+      </main>
 
-    <Home/>
-    <About />
-    <Project/>
-    <Skills/>
-    <Contact/>
+      <Footer />
 
-    <Footer/>
-  
 
-   </>
+    </>
   );
 }
 
