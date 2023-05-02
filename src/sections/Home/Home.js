@@ -33,30 +33,29 @@ function Home() {
                                 <ul>
                                     <li>
                                         <a href="/">
-                                            <i className="uil2 uil-github"></i>
+                                            <i className="uil2 fa-brands fa-square-github"></i>
 
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/">
-                                            <i className="uil2 uil-linkedin"></i>
+                                            <i className="uil2 fa-brands fa-linkedin"></i>
 
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/">
-                                            <i className={`uil2 uil-twitter`}></i>
+                                            <i className={`uil2 fa-brands fa-square-twitter`}></i>
 
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/">
-
-
-                                            <i className={`uil2 fa fa-instagram`} id="uil-instagram-alt" aria-hidden="true"></i>
-
-
-
+                                            <i 
+                                            // className={`uil2 fa fa-instagram`}
+                                            className='uil2 fa-brands fa-square-instagram'
+                                            
+                                            id="uil-instagram-alt" aria-hidden="true"></i>
 
                                         </a>
                                     </li>

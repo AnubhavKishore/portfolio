@@ -8,18 +8,22 @@ html {
   --hue-color: 250;
 
   --first-color: hsl(var(--hue-color), 69%, 61%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  /* --first-col-sec-col: hsl(250, 69%, 61%); */
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(250, 92%, 85%);
 
-  --title-color: hsl(250, 8%, 15%);
-  --text-color: hsl(250, 8%, 45%);
-  --text-color-light: hsl(250, 8%, 65%);
-  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --title-col: hsl(250, 8%, 15%);
+  --text-col: hsl(250, 8%, 45%);
+  --text-light-col: hsl(250, 8%, 65%);
+  
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+
+
+  
 
   --small-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -30,10 +34,15 @@ html {
   --prim-hover-col:  hsl(250, 57%, 53%);
   --prim-active-col: hsl(250, 100%, 72%);
   --prim-lighter-col: hsl(250, 92%, 85%);
+  
+  --footer-col: hsl(250, 69%, 61%);
 
+  --faintest-col:hsl(250deg 21.46% 90.18%);
   --white-col: #fff;
   --balck-col: #000000;
 
+  --input-col: hsl(250, 70%, 96%);
+  
   --h1-col: #212121;
   --btn-col: #212121;
   --allh-col:hsl(250, 8%, 45%);
@@ -129,6 +138,18 @@ li {
   align-items: center;
   justify-content: space-around;
 }
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
 
 .hover-link {
   cursor: pointer;

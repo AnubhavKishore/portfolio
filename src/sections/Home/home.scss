@@ -1,5 +1,5 @@
 .Home {
-  height: 95vh;
+  height: calc(100vh - var(--header-height));
   margin-bottom: 30px;
   .content {
     height: 100%;
@@ -40,14 +40,14 @@
           ul {
             display: flex;
             gap: 20px;
-            .uil-github {
+            .fa-square-github {
               color: #00405d;
             }
-            .uil-linkedin {
+            .fa-linkedin {
               color: #0077b5;
             }
 
-            .uil-twitter {
+            .fa-square-twitter {
               color: #55acee;
             }
 
@@ -62,10 +62,11 @@
               
             }
             #uil-instagram-alt:hover {
-              -webkit-text-fill-color:var(--prim-col);
+              -webkit-text-fill-color:var(--black-col);
             }
             .uil2:hover {
-              color: var(--prim-col);
+              color: var(--black-col);
+              
             }
           }
         }
