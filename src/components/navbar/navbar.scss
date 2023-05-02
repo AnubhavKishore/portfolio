@@ -2,6 +2,9 @@
     height: var(--header-height);
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 10px black;
+    position: sticky;
+    top: 0;
+    z-index: 99;
     .content{
         display: flex;
         height:100%;
@@ -17,7 +20,7 @@
         }
         .right{
             display: flex;
-            font-family: 'Domine', sans-serif;
+            font-family: var(--para-font);
             height: 100%;
             align-items: center;
 

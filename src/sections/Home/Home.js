@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import './home.scss'
 import profilepic from '../../assets/profilepic.png'
+import Primbtn from '../../components/Primary btn/Primbtn'
 
 
 function Home() {
@@ -18,9 +19,9 @@ function Home() {
                             <h1 className="head">
                                 Hi, I'm Abhishek Sharma
                             </h1>
-                            <h3 className="position">
+                            <h4 className="position">
                                 Web Developer
-                            </h3>
+                            </h4>
                             <p className="desc">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, distinctio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique tenetur dolores corporis.
                             </p>
@@ -31,25 +32,25 @@ function Home() {
                             <div className="social">
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="/">
                                             <i className="uil2 uil-github"></i>
 
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="/">
                                             <i className="uil2 uil-linkedin"></i>
 
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="/">
                                             <i className={`uil2 uil-twitter`}></i>
 
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="/">
 
 
                                             <i className={`uil2 fa fa-instagram`} id="uil-instagram-alt" aria-hidden="true"></i>
@@ -64,21 +65,9 @@ function Home() {
                             </div>
 
                             <div className="buttons">
-                                <a href="#">
-
-                                    <div className="btn-portfolio btn  btn-prim">
-                                        Portfolio
-                                        <i className="uil uil-bag"></i>
-
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div className="btn-contact btn btn-prim">
-
-                                        Contact
-                                        <i className="uil uil-message"></i>
-                                    </div>
-                                </a>
+                                
+                                <Primbtn value="My Resume" icon={<i className="uil uil-bag"></i>} />
+                                <Primbtn value="Contact Me" icon={<i className="uil uil-message"></i>} />
                             </div>
 
 

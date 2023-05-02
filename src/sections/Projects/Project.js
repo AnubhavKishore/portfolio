@@ -1,23 +1,18 @@
 import React from 'react';
 import './project.scss';
 import slideimg1 from "../../assets/bg1.jpg"
+import SecHead from '../../components/secHead/SecHead';
+import Primbtn from '../../components/Primary btn/Primbtn';
 
 function Project() {
 
-    
+
     return (
         <div className='project'>
             <div className="container">
                 <div className="content">
-                    <div className="header">
-                        <h1 className="head">
-                            My Projects
-                        </h1>
-                        <h4 className="intro">
-                            Most recent work
-                        </h4>
-
-                    </div>
+                   
+                    <SecHead head="My Projects" subhead="Most recent work" />
 
                     <div className="slider">
                         <div className="arrow center left-icon">
@@ -35,30 +30,24 @@ function Project() {
 
 
                                 <div className="heading">
-                                    <h1 className="head">
-                                        My Projects
-                                    </h1>
+                                    <h4 className="head">
+                                        Project Title
+                                    </h4>
                                 </div>
 
 
 
                                 <div className="mid">
-                                    <h4 id="desc">
+                                    <p className="desc">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, aliquam ut ex sunt praesentium odio perferendis vitae. Officiis rerum error aut architecto totam quae maxime saepe, eligendi hic at. Accusantium temporibus nesciunt aliquam omnis ipsum consequuntur quos cupiditate assumenda aliquid rerum rem minima at, blanditiis labore, iure ipsa. Cumque, consectetur.
-                                    </h4>
+                                    </p>
 
                                 </div>
 
 
 
                                 <div className="buttons">
-                                    <a href="#">
-
-                                        <div className="btn btn-cv btn-prim">
-                                            Demo
-                                            <i class="uil uil-arrow-up-right"></i>
-                                        </div>
-                                    </a>
+                                <Primbtn value="Demo" icon={<i className="uil uil-arrow-up-right"></i>} />
                                 </div>
 
                             </div>
@@ -71,6 +60,10 @@ function Project() {
                             <i class="uil uil-arrow-circle-right"></i>
                         </div>
 
+                    </div>
+
+                    <div className="dots">
+                        <p>. . .</p>
                     </div>
 
                 </div>

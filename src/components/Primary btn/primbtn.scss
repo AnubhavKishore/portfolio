@@ -1,0 +1,13 @@
+.btn-prim{
+  
+    background-color: var(--prim-col);
+    color: white;
+  }
+  
+  .btn-prim:hover{
+    background-color: var(--prim-hover-col);
+  }
+  .btn-prim:active{
+    background-color: var(--prim-active-col);
+  }
+  
