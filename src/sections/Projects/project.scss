@@ -1,75 +1,111 @@
-.project{
-    height: calc(100vh - var(--header-height));
+.project {
+  height: calc(100vh - var(--header-height));
 
-    .content{
+  .content {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+
+    .slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .each-slide {
         display: flex;
-        gap: 25px;
-        flex-direction: column;
-        
+        gap: 40px;
+        width: 100%;
+        padding: 0px 10px;
 
-        .slider{
-
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .each-slide{
-                display: flex;
-                gap: 40px;
-                width: 100%;
-                padding: 0px 10px;
-                
-                .left{
-                    flex: 1;
-                    padding: 10px;
-                    img{
-                        width:100%;
-                       
-
-
-                    }
-
-                }
-
-                .right{
-                    display: flex;
-                    flex-direction: column;
-
-                    justify-content: center;
-                    gap: 30px;
-                    flex: 1;
-
-                    .heading{
-                        .head{
-                            font-size: var(--h3-font-size);
-                        }
-                    }
-
-                    .mid{
-                        display: flex;
-                        .desc{
-                            padding: 0px 10px 0px 0px;
-
-                        }
-                    }
-
-                }
-            }
-
-            .arrow{
-                
-                i{
-                    color: var(--prim-col);
-                    
-
-                    font-size: var(--uil0-font-size);
-                }
-            }
-
-
-
-
+        .left {
+          flex: 1;
+          padding: 10px;
+          img {
+            width: 100%;
+          }
         }
 
+        .right {
+          display: flex;
+          flex-direction: column;
+
+          justify-content: center;
+          gap: 30px;
+          flex: 1;
+
+          .heading {
+            .head {
+              font-size: var(--h3-font-size);
+            }
+          }
+
+          .mid {
+            display: flex;
+            .desc {
+              padding: 0px 10px 0px 0px;
+            }
+          }
+        }
+      }
+
+      .arrow {
+        width: 45px;
+
+        i {
+          color: var(--prim-col);
+
+          font-size: var(--uil0-font-size);
+        }
+      }
     }
+
+    .dots {
+      z-index: 9;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .project {
+    height: fit-content;
+    .content {
+      .header {
+        .head {
+          font-size: var(--media-h1-font-size);
+        }
+        .intro {
+          font-size: var(--media-h6-font-size);
+        }
+      }
+
+      .slider {
+        .arrow {
+          width: 35px;
+          i {
+            font-size: var(--media-uil0-font-size);
+          }
+        }
+        .each-slide {
+          padding: 0px;
+          flex-direction: column;
+          gap: 15px;
+
+          .right {
+            text-align: center;
+            gap: 15px;
+            .mid {
+              .desc {
+                font-size: var(--media-p-font-size);
+              }
+            }
+
+            .buttons {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
 }

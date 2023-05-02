@@ -1,60 +1,67 @@
-.navbar{
-    height: var(--header-height);
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 10px black;
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    .content{
-        display: flex;
-        height:100%;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-    
-        .left{
-            h2{
-                display: inline;
-            }
-    
-        }
-        .right{
-            display: flex;
-            font-family: var(--para-font);
-            height: 100%;
-            align-items: center;
+.navbar {
+  height: var(--header-height);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 10px black;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  .content {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 
-            ul{
-                display: flex;
-                gap: 10px;
-                overflow: none;
-                margin: 0px 4px;
-
-                li{
-                    display: inline;
-                    
-                    a{
-                        font-size:var(--normal-font-size);
-                        font-weight: 600;
-                        padding: 7px 15px;
-                        transition: all .1s ease-out;
-
-                        
-                        &:hover{
-                            
-                            color: var(--prim-col);
-                        }
-                    }
-
-                }
-            }
-
-            
-
-
-    
-        }
-
+    .left {
+      h2 {
+        display: inline;
+      }
     }
+    .right {
+      display: flex;
+      font-family: var(--para-font);
+      height: 100%;
+      align-items: center;
 
+      ul {
+        display: flex;
+        gap: 10px;
+        overflow: none;
+        margin: 0px 4px;
+
+        li {
+          display: inline;
+          overflow: hidden;
+
+          a {
+            font-size: var(--normal-font-size);
+            font-weight: 600;
+            padding: 7px 15px;
+            transition: all 0.1s ease-out;
+
+            &:hover {
+              color: var(--prim-col);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .navbar {
+    // display: none;
+    position: fixed;
+    top: 0;
+    .content {
+      padding: 0px 10px;
+      .right {
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
 }

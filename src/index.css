@@ -15,15 +15,11 @@ html {
   --title-col: hsl(250, 8%, 15%);
   --text-col: hsl(250, 8%, 45%);
   --text-light-col: hsl(250, 8%, 65%);
-  
+
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-
-
-
-  
 
   --small-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -31,21 +27,21 @@ html {
   --normal-font-size: 1.125rem;
 
   --prim-col: hsl(250, 69%, 61%);
-  --prim-hover-col:  hsl(250, 57%, 53%);
+  --prim-hover-col: hsl(250, 57%, 53%);
   --prim-active-col: hsl(250, 100%, 72%);
   --prim-lighter-col: hsl(250, 92%, 85%);
-  
+
   --footer-col: hsl(250, 69%, 61%);
 
-  --faintest-col:hsl(250deg 21.46% 90.18%);
+  --faintest-col: hsl(250deg 21.46% 90.18%);
   --white-col: #fff;
   --balck-col: #000000;
 
   --input-col: hsl(250, 70%, 96%);
-  
+
   --h1-col: #212121;
   --btn-col: #212121;
-  --allh-col:hsl(250, 8%, 45%);
+  --allh-col: hsl(250, 8%, 45%);
   --para-col: hsl(250, 6%, 61%);
 
   --h1-font: "Roboto Slab", serif;
@@ -64,6 +60,20 @@ html {
   --uil2-font-size: 2.1rem;
   --uil0-font-size: 2.6rem;
   --btn-font-size: 1.33rem;
+
+  /* Media */
+
+  --media-h0-font-size: 1.6rem;
+  --media-h1-font-size: 1.5rem;
+  --media-h4-font-size: 1.1rem;
+
+  --media-h6-font-size: 0.95rem;
+  --media-p-font-size: 0.9rem;
+
+  --media-uil-font-size: 1rem;
+  --media-uil2-font-size: 1.5rem;
+  --media-uil0-font-size: 1.7rem;
+  --media-btn-font-size: 0.9rem;
 }
 
 * {
@@ -73,6 +83,7 @@ html {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  overflow: auto;
 }
 h2,
 h3,
@@ -124,7 +135,6 @@ li {
 .container {
   max-width: 1200px;
   margin: 0px auto;
-  width: 100%;
   height: 100%;
 }
 
@@ -139,17 +149,10 @@ li {
   justify-content: space-around;
 }
 
-.flex-col{
+.flex-col {
   display: flex;
   flex-direction: column;
 }
-
-
-
-
-
-
-
 
 .hover-link {
   cursor: pointer;
@@ -168,4 +171,18 @@ li {
   border-radius: 4px;
   font-family: var(--h1-font);
   font-size: var(--btn-font-size);
+}
+
+@media screen and (max-width: 430px) {
+  .btn {
+    font-size: var(--media-btn-font-size);
+  }
+
+  .uil {
+    font-size: var(--media-uil-font-size);
+  }
+
+  .uil2 {
+    font-size: var(--media-uil2-font-size);
+  }
 }

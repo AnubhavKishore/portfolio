@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // flex-wrap: wrap-reverse;
 
     .left {
       display: flex;
@@ -18,10 +19,10 @@
         flex-direction: column;
         justify-content: center;
         gap: 15px;
-        .head{
+        .head {
           font-size: var(--h0-font-size);
         }
-        .position{
+        .position {
           color: var(--allh-col);
           font-size: var(--h4-font-size);
         }
@@ -51,26 +52,30 @@
             }
 
             #uil-instagram-alt {
-              background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+              background: radial-gradient(
+                circle at 30% 107%,
+                #fdf497 0%,
+                #fdf497 5%,
+                #fd5949 45%,
+                #d6249f 60%,
+                #285aeb 90%
+              );
               -webkit-background-clip: text;
-                      
-                  background-clip: text;
+
+              background-clip: text;
               -webkit-text-fill-color: transparent;
-              
-              
-              
             }
             #uil-instagram-alt:hover {
-              -webkit-text-fill-color:var(--black-col);
+              -webkit-text-fill-color: var(--black-col);
             }
             .uil2:hover {
               color: var(--black-col);
-              
             }
           }
         }
 
         .buttons {
+          flex-wrap: wrap;
           display: flex;
           gap: 20px;
         }
@@ -82,7 +87,68 @@
 
       .profile-img {
         img {
-          height:400px;
+          object-fit: contain;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .Home {
+    height: calc(fit-content - var(--header-height));
+    width: 100%;
+    position: relative;
+
+    .content {
+      flex-direction: column-reverse;
+      gap: 5px;
+
+      .left {
+        padding: 0px 5px;
+        .bottom {
+          .social {
+            .buttons {
+              flex-direction: column;
+            }
+          }
+        }
+        .details {
+          gap: 8px;
+
+          .head {
+            overflow: hidden;
+            line-height: 100%;
+            font-size: var(--media-h0-font-size);
+          }
+          .position {
+            font-size: var(--media-h4-font-size);
+          }
+
+          .desc {
+            font-size: var(--media-p-font-size);
+          }
+        }
+
+        .bottom {
+          margin-top: auto;
+
+          .buttons{
+            gap: 10px;
+          }
+        }
+      }
+      .right {
+        flex: none;
+        align-items: center;
+        justify-content: center;
+
+        .profile-img {
+          img {
+            width: 200px;
+            height: 280px;
+          }
         }
       }
     }

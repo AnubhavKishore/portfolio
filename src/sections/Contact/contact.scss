@@ -1,139 +1,164 @@
-.contact{
-    height: calc(100vh - var(--header-height));
+.contact {
+  height: calc(100vh - var(--header-height));
 
-    .content{
-        gap: 30px;
-        height: 100%;
+  .content {
+    gap: 30px;
+    height: 100%;
 
+    .bottom {
+      flex-wrap: wrap;
+      display: flex;
+      gap: 10px;
+      .left {
+        flex: 0.6;
+        gap: 20px;
 
-        .bottom{
+        .each-mode {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 0.7fr 3fr;
+          gap: 10px;
+
+          i {
+            grid-column: 1/2;
+            grid-row: 1/3;
+            color: var(--prim-col);
+            font-size: var(--h1-font-size);
             display: flex;
+            margin-top: 3px;
+            justify-content: center;
+          }
+          .txt {
+            grid-column: 2;
+          }
+          .number,
+          .email {
+            grid-column: 2;
+          }
+        }
+      }
+
+      .right {
+        flex: 2;
+        gap: 20px 0px;
+        form {
+          display: grid;
+          gap: 10px;
+          grid-template-rows: repeat(3, auto);
+          grid-template-columns: 1fr 1fr;
+
+          div {
+            background-color: var(--input-col);
+            display: flex;
+            flex-direction: column;
             gap: 10px;
-            .left{
-                flex:.6;
-                gap: 20px;
+            padding: 15px;
+            border-radius: 10px;
+          }
 
-                .each-mode{
-                    display: grid;
-                    grid-template-rows: 1fr 1fr;
-                    grid-template-columns: .5fr 3fr;
-                    gap: 10px;
+          input,
+          textarea {
+            resize: none;
+            border: none;
+            border-bottom: 1px solid var(--faintest-col);
+            outline: none;
+            background-color: var(--input-col);
+            font-family: var(--para-font);
 
-                    i{
+            color: var(--text-col);
+            font-size: var(--p-font-size);
+          }
 
-                        grid-column: 1/2;
-                        grid-row: 1/3;
-                        color: var(--prim-col);
-                        font-size: var(--h1-font-size);
-                        display: flex;
-                        margin-top: 3px;
-                        justify-content: center;
+          label {
+            font-size: var(--p-font-size);
+            font-family: var(--h1-font);
+            color: var(--h1-col);
+          }
 
-                    }
-                    .txt{
-                        grid-column: 2;
+          .name {
+            grid-column: 1/2;
+            grid-row: 1/2;
+          }
 
-                    }
-                    .number,.email{
-                        grid-column: 2;
+          .req-email {
+            grid-column: 2/3;
+            grid-row: 1/2;
+          }
 
-                    }
+          .title {
+            grid-column: 1/3;
+            grid-row: 2/3;
+          }
 
-
-                }
-
-            }
-
-            .right{
-                flex: 2;
-                gap:20px 0px;
-                form{
-                    
-                    display: grid;
-                    gap: 10px;
-                    grid-template-rows: repeat(3,auto);
-                    grid-template-columns: 1fr 1fr;
-
-                    div{
-                        background-color: var(--input-col);
-                        display: flex;
-                        flex-direction: column;
-                        gap: 10px;
-                        padding:15px;
-                        border-radius: 10px;
-
-                    }
-
-                    input,textarea{
-                        resize: none;
-                        border: none;
-                        border-bottom: 1px solid var(--faintest-col);
-                        outline: none;
-                        background-color: var(--input-col);
-                        font-family: var(--para-font);
-
-                        color: var(--text-col);
-                        font-size: var(--p-font-size);
-
-                    }
-
-                    label{
-                        font-size: var(--p-font-size);
-                        font-family: var(--h1-font);
-                        color: var(--h1-col);
-                    }
-
-
-                    .name{
-                        grid-column: 1/2;
-                        grid-row: 1/2;
-
-
-
-                    }
-
-                    .req-email{
-                        grid-column: 2/3;
-                        grid-row: 1/2;
-
-                    }
-
-                    .title{
-                        grid-column: 1/3;
-                        grid-row: 2/3;
-
-                    }
-
-                    .message{
-                        grid-column: 1/3;
-                        grid-row: 3;
-
-                    }
-
-
-                }
-
-
-
-
-
-
-
-
-
-
-                .buttons{
-                    gap: 20px;
-                }
-
-              
-
-
-
-
-            }
-
+          .message {
+            grid-column: 1/3;
+            grid-row: 3;
+          }
         }
 
+        .buttons {
+          gap: 20px;
+        }
+      }
     }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .contact {
+    width: 100%;
+    height: fit-content;
+    .content {
+      .header {
+        .head {
+          font-size: var(--media-h1-font-size);
+        }
+        .intro {
+          font-size: var(--media-h6-font-size);
+        }
+      }
+      .bottom {
+        flex-direction: column;
+        gap: 20px;
+
+        .left {
+          flex: none;
+          align-items: left;
+          justify-content: center;
+          .each-mode {
+            gap: 10px 0px;
+            i {
+              margin-top: 10px;
+
+              font-size: var(--media-h0-font-size);
+
+              justify-content: center;
+            }
+            .txt {
+              font-size: var(--media-h4-font-size);
+            }
+            .number,
+            .email {
+              font-size: var(--media-p-font-size);
+            }
+          }
+        }
+
+        .right {
+          align-items: center;
+          form {
+            div {
+              padding: 10px 15px;
+            }
+            label {
+              font-size: var(--media-h6-font-size);
+            }
+            input {
+              font-size: var(--media-p-font-size);
+            }
+          }
+        }
+      }
+    }
+  }
 }
