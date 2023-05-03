@@ -7,8 +7,23 @@ import Project from "./sections/Projects/Project";
 import Skills from "./sections/skills/Skills";
 
 import './App.scss'
+import { useDispatch, useSelector } from "react-redux";
+import { toggleSubNav } from "./redux/slices/utilsSlice.js";
 
 function App() {
+
+  
+  const subNavActive = useSelector(s => s.utilsReducer.subNavActive);
+  const dispatch = useDispatch();
+
+
+  function handleScroll(e) {
+    console.log("hi",e.currentTarget.scrollTop);
+
+    dispatch(toggleSubNav(subNavActive !== null ? !subNavActive : true))
+  }
+
+
 
   return (
     <>

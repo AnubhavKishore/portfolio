@@ -1,21 +1,31 @@
 import React from 'react'
 import './subnav.scss'
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleSubNav } from '../../redux/slices/utilsSlice';
 
 
 function SubNav() {
+    const w =window.innerWidth < 430;
+    const subNavActive = useSelector(s=>s.utilsReducer.subNavActive);
+    const dispatch =useDispatch();
+   
+    
+
+
+
     return (
-        <div className='subnav'>
+        <div style={{display :subNavActive && w ? 'block':'none'  }} id="subnav" className='subnav'>
             <div className="content">
                 <ul>
                     <li>
-                        <a href="/" className='home' id='home' >
+                        <a  href="/" className='home' id='home' >
                             <i className="uil uil-estate"></i>
                             Home
                         </a>
                     </li>
 
                     <li>
-                        <a href="/" className='about' id='about' >
+                        <a  href="/" className='about' id='about' >
                             <i className="uil uil-user"></i>
                             About
                         </a>

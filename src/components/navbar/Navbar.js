@@ -1,8 +1,24 @@
 import React from 'react'
 import './navbar.scss'
 import SubNav from '../res-nav/SubNav'
+import { useDispatch, useSelector } from 'react-redux'
+import { toggleSubNav } from '../../redux/slices/utilsSlice'
 
 function Navbar() {
+    
+    const w =window.innerWidth < 430;
+    const subNavActive = useSelector(s=>s.utilsReducer.subNavActive);
+    const dispatch =useDispatch();
+   
+    
+    function handleSubnav(){
+        
+        dispatch(toggleSubNav(subNavActive !== null ? !subNavActive : true))
+    }
+
+
+
+
     return (<>
         <nav className='navbar'>
             <div className="container">
@@ -21,7 +37,8 @@ function Navbar() {
                             <li><a href="/" className='skills' id='skills' >Skills</a></li>
                             <li><a href="/" className='contact me' id='contact me' >Contact me</a></li>
                         </ul>
-                        <i className="uil uil-apps" ></i>
+                        <i  style={{display :w &&subNavActive ? 'block':'none'}} onClick={handleSubnav} className="uil uil-times-circle"></i>
+                        <i style={{display :w &&!subNavActive  ? 'block':'none'}}  className="uil uil-apps" onClick={handleSubnav} ></i>
                         <i id="dark-icon" className="uil uil-moon"></i>
                     </div>
 
