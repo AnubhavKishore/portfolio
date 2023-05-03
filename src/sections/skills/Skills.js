@@ -1,11 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './skills.scss'
 import SecHead from '../../components/secHead/SecHead'
-import { UilAngleUp } from '@iconscout/react-unicons'
-
-
 function Skills() {
-  const [isOpen, setIsOpen] = useState(false)
   return (
     <div className='skills'>
       <div className="container">
@@ -19,7 +15,7 @@ function Skills() {
               <div className="each-skill ">
 
                 <div className="head">
-                  <i class="uil uil-brackets-curly skill-icons"></i>
+                  <i className="uil uil-brackets-curly skill-icons"></i>
                   <h4 className="heading">
                     Frontend Developer
                   </h4>
@@ -27,11 +23,9 @@ function Skills() {
                   <p className="desc">
                     More than 4 years
                   </p>
-                  {isOpen ?
-                    <i class="angle uil2 uil-angle-up"></i> :
-                    <i class="angle uil2 uil-angle-down"></i>
-                  }
-
+                    <i className="angle uil2 uil-angle-up"></i> :
+                    <i className="angle uil2 uil-angle-down"></i>
+                 
                 </div>
 
 
@@ -83,7 +77,7 @@ function Skills() {
               <div className="each-skill ">
 
                 <div className="head">
-                  <i class="uil uil-brackets-curly skill-icons"></i>
+                  <i className="uil uil-brackets-curly skill-icons"></i>
                   <h4 className="heading">
                     UI/UX
                   </h4>
@@ -91,10 +85,10 @@ function Skills() {
                   <p className="desc">
                     More than 5 years
                   </p>
-                  {isOpen ?
-                    <i class="angle uil2 uil-angle-up"></i> :
-                    <i class="angle uil2 uil-angle-down"></i>
-                  }
+                  
+                    <i className="angle uil2 uil-angle-up"></i> :
+                    <i className="angle uil2 uil-angle-down"></i>
+                 
 
                 </div>
 

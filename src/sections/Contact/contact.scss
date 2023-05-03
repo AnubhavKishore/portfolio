@@ -1,5 +1,5 @@
 .contact {
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
 
   .content {
     gap: 30px;
@@ -12,6 +12,7 @@
       .left {
         flex: 0.6;
         gap: 20px;
+        min-width: 228px;
 
         .each-mode {
           display: grid;
@@ -104,7 +105,8 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+
+@media screen and (max-width: 768px) {
   .contact {
     width: 100%;
     height: fit-content;
@@ -114,7 +116,7 @@
           font-size: var(--media-h1-font-size);
         }
         .intro {
-          font-size: var(--media-h6-font-size);
+          font-size: var(--media-p-font-size);
         }
       }
       .bottom {
@@ -157,6 +159,24 @@
               font-size: var(--media-p-font-size);
             }
           }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  .contact {
+    width: 100%;
+    height: fit-content;
+    .content {
+      .header {
+        .head {
+          font-size: var(--media-h1-font-size);
+        }
+        .intro {
+          font-size: var(--media-h6-font-size);
         }
       }
     }

@@ -14,7 +14,7 @@ function Contact() {
                     <div className="bottom">
                         <div className="left flex-col">
                             <div className="each-mode hover-link">
-                                <i class="uil uil-phone-volume"></i>
+                                <i className="uil uil-phone-volume"></i>
                                 <h4 className="txt call-txt">Call Me</h4>
                                 <p className="number">9999-9999-99</p>
 
@@ -23,14 +23,14 @@ function Contact() {
 
 
                             <div className="each-mode hover-link">
-                                <i class="uil uil-envelope "></i>
+                                <i className="uil uil-envelope "></i>
                                 <h4 className="txt email-txt">Email</h4>
                                 <p className="email">dummy@gmail.com</p>
 
                             </div>
 
                             <div className="each-mode hover-link">
-                                <i class="uil uil-map-marker"></i>
+                                <i className="uil uil-map-marker"></i>
                                 <h4 className="txt location-txt">Location</h4>
                                 <p className="email">New-Delhi 110059</p>
 
@@ -71,7 +71,7 @@ function Contact() {
 
                             <div className="buttons center">
                                 <Primbtn value="Submit" icon={<i className="uil uil-message"></i>} />
-                                <Primbtn value="Reset" icon={<i class="uil uil-history-alt"></i>} />
+                                <Primbtn value="Reset" icon={<i className="uil uil-history-alt"></i>} />
                             </div>
 
                         </div>

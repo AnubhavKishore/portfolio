@@ -1,5 +1,5 @@
 .project {
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
 
   .content {
     display: flex;
@@ -17,6 +17,9 @@
         padding: 0px 10px;
 
         .left {
+          align-items: center;
+          justify-content: center;
+          display: flex;
           flex: 1;
           padding: 10px;
           img {
@@ -48,7 +51,7 @@
       }
 
       .arrow {
-        width: 45px;
+        min-width: 42px;
 
         i {
           color: var(--prim-col);
@@ -63,9 +66,12 @@
       text-align: center;
     }
   }
+
 }
 
-@media screen and (max-width: 430px) {
+
+
+@media screen and (max-width: 768px) {
   .project {
     height: fit-content;
     .content {
@@ -74,7 +80,7 @@
           font-size: var(--media-h1-font-size);
         }
         .intro {
-          font-size: var(--media-h6-font-size);
+          font-size: var(--media-p-font-size);
         }
       }
 
@@ -106,6 +112,40 @@
           }
         }
       }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 430px) {
+  .project {
+    height: fit-content;
+    .content {
+      .header {
+        .head {
+          font-size: var(--media-h1-font-size);
+        }
+        .intro {
+          font-size: var(--media-h6-font-size);
+        }
+      }
+
+     
     }
   }
 }

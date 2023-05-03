@@ -11,12 +11,12 @@ function Project() {
         <div className='project'>
             <div className="container">
                 <div className="content">
-                   
+
                     <SecHead head="My Projects" subhead="Most recent work" />
 
                     <div className="slider">
                         <div className="arrow center left-icon">
-                            <i class="uil uil-arrow-circle-left"></i>
+                            <i className="uil uil-arrow-circle-left"></i>
                         </div>
 
                         <div className="each-slide">
@@ -47,7 +47,7 @@ function Project() {
 
 
                                 <div className="buttons">
-                                <Primbtn value="Demo" icon={<i className="uil uil-arrow-up-right"></i>} />
+                                    <Primbtn value="Demo" icon={<i className="uil uil-arrow-up-right"></i>} />
                                 </div>
 
                             </div>
@@ -57,7 +57,7 @@ function Project() {
 
 
                         <div className="arrow right-icon">
-                            <i class="uil uil-arrow-circle-right"></i>
+                            <i className="uil uil-arrow-circle-right"></i>
                         </div>
 
                     </div>

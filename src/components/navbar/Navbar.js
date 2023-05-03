@@ -1,8 +1,9 @@
 import React from 'react'
 import './navbar.scss'
+import SubNav from '../res-nav/SubNav'
 
 function Navbar() {
-    return (
+    return (<>
         <nav className='navbar'>
             <div className="container">
                 <div className="content">
@@ -20,6 +21,7 @@ function Navbar() {
                             <li><a href="/" className='skills' id='skills' >Skills</a></li>
                             <li><a href="/" className='contact me' id='contact me' >Contact me</a></li>
                         </ul>
+                        <i className="uil uil-apps" ></i>
                         <i id="dark-icon" className="uil uil-moon"></i>
                     </div>
 
@@ -29,6 +31,9 @@ function Navbar() {
             </div>
 
         </nav>
+        <SubNav className='subnav'></SubNav>
+
+    </>
     )
 }
 

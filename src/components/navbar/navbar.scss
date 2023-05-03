@@ -1,8 +1,9 @@
 .navbar {
+  position: fixed;
   height: var(--header-height);
-  background-color: rgb(255, 255, 255);
-  box-shadow: 1px 1px 10px black;
-  position: sticky;
+  color: var(--white-col);
+  background-color: var(--footer-col);;
+  box-shadow: 0px 0px 8px var(--prim-active-col);
   top: 0;
   z-index: 99;
   width: 100%;
@@ -12,9 +13,13 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-
+    
     .left {
       h2 {
+        a{
+          color: var(--white-col);
+
+        }
         display: inline;
       }
     }
@@ -23,25 +28,82 @@
       font-family: var(--para-font);
       height: 100%;
       align-items: center;
+      gap: 12px;
+
+      .uil-apps{
+        display: none;
+      }
+      
 
       ul {
         display: flex;
         gap: 10px;
         overflow: none;
         margin: 0px 4px;
+        
 
         li {
           display: inline;
           overflow: hidden;
 
           a {
+           
+              color: var(--white-col);
+    
+           
             font-size: var(--normal-font-size);
-            font-weight: 600;
+            // font-weight: 600;
             padding: 7px 15px;
             transition: all 0.1s ease-out;
 
             &:hover {
-              color: var(--prim-col);
+              color: var(--faintest-col);
+            }
+          }
+        }
+      }
+      
+      
+      i:hover{
+        color: var(--faintest-col);
+
+      }
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 1230px) {
+  .navbar {
+    // display: none;
+    position: fixed;
+    top: 0;
+    .content {
+      padding: 0px 10px;
+      
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    .content {
+      
+      .left {
+        h2 {
+          font-size: var(--media-h4-font-size);
+        }
+      }
+      .right {
+        ul {
+          li{
+            a{
+              padding: 5px;
+              font-size: var(--media-p-font-size);
             }
           }
         }
@@ -49,6 +111,16 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 430px) {
   .navbar {
@@ -60,7 +132,16 @@
       .right {
         ul {
           display: none;
+          
         }
+        .uil-apps{
+          display: block;
+        }
+        .uil{
+          
+          font-size: var(--p-font-size);
+        }
+        
       }
     }
   }
