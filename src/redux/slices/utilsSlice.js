@@ -5,6 +5,8 @@ const utilsSlice = createSlice({
     name: "utilsSlice",
     initialState: {
         subNavActive: null,
+        darkTheme: localStorage.getItem('selected-dark-theme') === 'true' ? true : false,
+        
     },
 
     reducers: {
@@ -14,13 +16,16 @@ const utilsSlice = createSlice({
             state.subNavActive = w && action.payload
 
         },
-        toggleSkills: (state, action) => {
-            state.subNavActive = action.payload
+        toggleTheme: (state, action) => {
+
+            state.darkTheme = !state.darkTheme;
+
+
 
         }
     }
 
 })
 
-export const { toggleSubNav } = utilsSlice.actions;
+export const { toggleSubNav, toggleTheme } = utilsSlice.actions;
 export default utilsSlice.reducer;

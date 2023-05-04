@@ -11,14 +11,16 @@
       .head {
         display: grid;
         grid-template-columns: 0.6fr 3fr 1fr;
-
+        h4{
+          color: var(--black-col);
+        }
         .skill-icons {
           grid-column: 1/2;
           grid-row: 1/3;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: var(--prim-col);
+          color: var(--prim-btn-col);
 
           font-size: var(--h1-font-size);
         }
@@ -30,7 +32,7 @@
 
         .angle {
           display: flex;
-          color: var(--prim-col);
+          color: var(--prim-btn-col);
           margin-left: auto;
           grid-column: 3;
           grid-row: 1/3;
@@ -64,7 +66,7 @@
             .progress-line {
               border-radius: 5px;
               height: 5px;
-              background-color: var(--prim-col);
+              background-color: var(--prim-btn-col);
             }
             .for-html {
               width: 80%;

@@ -23,13 +23,14 @@
           i {
             grid-column: 1/2;
             grid-row: 1/3;
-            color: var(--prim-col);
+            color: var(--prim-btn-col);
             font-size: var(--h1-font-size);
             display: flex;
             margin-top: 3px;
             justify-content: center;
           }
           .txt {
+            color: var(--black-col);
             grid-column: 2;
           }
           .number,

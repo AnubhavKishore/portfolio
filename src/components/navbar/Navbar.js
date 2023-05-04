@@ -2,18 +2,25 @@ import React from 'react'
 import './navbar.scss'
 import SubNav from '../res-nav/SubNav'
 import { useDispatch, useSelector } from 'react-redux'
-import { toggleSubNav } from '../../redux/slices/utilsSlice'
+import { toggleSubNav, toggleTheme } from '../../redux/slices/utilsSlice'
 
 function Navbar() {
+
+    const w = window.innerWidth < 430;
+    const subNavActive = useSelector(s => s.utilsReducer.subNavActive);
+    const darkTheme = useSelector(s => s.utilsReducer.darkTheme);
+    const dispatch = useDispatch();
     
-    const w =window.innerWidth < 430;
-    const subNavActive = useSelector(s=>s.utilsReducer.subNavActive);
-    const dispatch =useDispatch();
-   
-    
-    function handleSubnav(){
-        
+    localStorage.setItem('selected-dark-theme',darkTheme)
+
+    function handleSubnav() {
+
         dispatch(toggleSubNav(subNavActive !== null ? !subNavActive : true))
+    }
+
+    function handleTheme() {
+        dispatch(toggleTheme());
+        localStorage.removeItem('selected-dark-theme')
     }
 
 
@@ -37,9 +44,12 @@ function Navbar() {
                             <li><a href="/" className='skills' id='skills' >Skills</a></li>
                             <li><a href="/" className='contact me' id='contact me' >Contact me</a></li>
                         </ul>
-                        <i  style={{display :w &&subNavActive ? 'block':'none'}} onClick={handleSubnav} className="uil uil-times-circle"></i>
-                        <i style={{display :w &&!subNavActive  ? 'block':'none'}}  className="uil uil-apps" onClick={handleSubnav} ></i>
-                        <i id="dark-icon" className="uil uil-moon"></i>
+
+                        <i onClick={handleSubnav} className={`uil uil-${w && subNavActive ? 'times-circle' : 'apps'}`}></i>
+                       
+
+
+                        <i onClick={handleTheme} id="dark-icon" className={`uil ${darkTheme ? "uil-sun" : "uil-moon"}`}></i>
                     </div>
 
 

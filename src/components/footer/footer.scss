@@ -22,7 +22,7 @@
 
         .name,
         .position {
-          color: var(--white-col);
+          color: white;
           font-weight: 400;
         }
       }
@@ -37,7 +37,7 @@
             overflow: hidden;
 
             a {
-              color: var(--white-col);
+              color: white;
               font-size: var(--normal-font-size);
 
               padding: 5px 10px;
@@ -55,7 +55,7 @@
           display: flex;
           gap: 20px;
           .uil2 {
-            color: var(--white-col);
+            color: white;
           }
           .uil2:hover {
             color: var(--faintest-col);

@@ -17,8 +17,6 @@ html {
   --text-col: hsl(250, 8%, 45%);
   --text-light-col: hsl(250, 8%, 65%);
 
-  --body-color: hsl(var(--hue-color), 60%, 99%);
-  --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -28,15 +26,18 @@ html {
   --normal-font-size: 1.125rem;
 
   --prim-col: hsl(250, 69%, 61%);
+  --prim-btn-col: hsl(250, 69%, 61%);
   --prim-hover-col: hsl(250, 57%, 53%);
   --prim-active-col: hsl(250, 100%, 72%);
   --prim-lighter-col: hsl(250, 92%, 85%);
+  --body-color: hsl(250, 60%, 99%);
+  --container-color: #fff;
 
   --footer-col: hsl(250, 69%, 61%);
 
   --faintest-col: hsl(250deg 21.46% 90.18%);
   --white-col: #fff;
-  --balck-col: #000000;
+  --black-col: #000000;
 
   --input-col: hsl(250, 70%, 96%);
 
@@ -86,6 +87,37 @@ html {
   list-style: none;
   overflow: auto;
 }
+body {
+  background-color: var(--body-color);
+}
+
+body.dark-theme {
+  --body-color: hsl(250, 28%, 12%);
+  --container-color: hsl(250, 28%, 12%);
+
+  --white-col: #000000;
+  --black-col: #ffffff;
+
+  --footer-col: hsl(250, 28%, 19%);
+
+  --h1-col: hsl(250, 8%, 95%);
+
+  --para-col: hsl(250, 8%, 75%);
+
+  --prim-col: hsl(250, 30%, 8%);
+  --prim-hover-col: hsl(250, 57%, 53%);
+  --prim-active-col: hsl(250, 100%, 72%);
+  --prim-lighter-col: hsl(250, 92%, 85%);
+  
+  --allh-col: hsl(250, 8%, 85%);
+
+
+  --faintest-col: hsl(250deg 21.46% 90.18%);
+ 
+
+  --input-col: hsl(250, 28%, 25%);
+}
+
 h2,
 h3,
 h4,
@@ -137,6 +169,7 @@ li {
   max-width: 1200px;
   margin: 0px auto;
   height: 100%;
+  /* background-color: var(--container-color); */
 }
 
 .center {

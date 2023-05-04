@@ -1,8 +1,8 @@
 .navbar {
   position: fixed;
   height: var(--header-height);
-  color: var(--white-col);
-  background-color: var(--footer-col);;
+  color:white;
+  background-color: var(--footer-col);
   box-shadow: 0px 0px 8px var(--prim-active-col);
   top: 0;
   z-index: 99;
@@ -17,7 +17,7 @@
     .left {
       h2 {
         a{
-          color: var(--white-col);
+          color: white;
 
         }
         display: inline;
@@ -48,7 +48,7 @@
 
           a {
            
-              color: var(--white-col);
+              color:white;
     
            
             font-size: var(--normal-font-size);

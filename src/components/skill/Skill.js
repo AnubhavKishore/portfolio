@@ -21,8 +21,8 @@ function Skill() {
                     <p className="desc">
                         More than 4 years
                     </p>
-                    <i style={{ display: active ? 'flex' : 'none' }}className="angle uil2 uil-angle-up"></i>
-                    <i style={{ display: !active ? 'flex' : 'none' }} className="angle uil2 uil-angle-down"></i>
+                    <i className={`angle uil2 uil-angle-${active ? 'up':'down'}`}></i>
+                    
 
                 </div>
 

@@ -7,21 +7,28 @@ import Project from "./sections/Projects/Project";
 import Skills from "./sections/skills/Skills";
 
 import './App.scss'
-import { useDispatch, useSelector } from "react-redux";
-import { toggleSubNav } from "./redux/slices/utilsSlice.js";
+import { useSelector } from "react-redux";
 
 function App() {
-
-  
-  const subNavActive = useSelector(s => s.utilsReducer.subNavActive);
-  const dispatch = useDispatch();
+  const darkTheme = useSelector(s => s.utilsReducer.darkTheme);
 
 
-  function handleScroll(e) {
-    console.log("hi",e.currentTarget.scrollTop);
-
-    dispatch(toggleSubNav(subNavActive !== null ? !subNavActive : true))
+  if(darkTheme){
+    document.body.classList.add('dark-theme');
+  }else{
+    
+    document.body.classList.remove('dark-theme');
   }
+
+
+
+
+
+
+
+
+
+
 
 
 

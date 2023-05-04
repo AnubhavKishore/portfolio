@@ -33,7 +33,7 @@ function Home() {
                                 <ul>
                                     <li>
                                         <a href="/">
-                                            <i className="uil2 fa-brands fa-square-github"></i>
+                                            <i className="uil2 fa-brands fa-github"></i>
 
                                         </a>
                                     </li>
@@ -45,7 +45,7 @@ function Home() {
                                     </li>
                                     <li>
                                         <a href="/">
-                                            <i className={`uil2 fa-brands fa-square-twitter`}></i>
+                                            <i className={`uil2 fa-brands fa-twitter`}></i>
 
                                         </a>
                                     </li>
@@ -53,7 +53,7 @@ function Home() {
                                         <a href="/">
                                             <i 
                                             // className={`uil2 fa fa-instagram`}
-                                            className='uil2 fa-brands fa-square-instagram'
+                                            className='uil2 fa-brands fa-instagram'
                                             
                                             id="uil-instagram-alt" aria-hidden="true"></i>
 

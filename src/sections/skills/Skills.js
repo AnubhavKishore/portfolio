@@ -1,7 +1,7 @@
 import React from 'react'
 import './skills.scss'
 import SecHead from '../../components/secHead/SecHead'
-import Skill from '../../components/skills/Skill'
+import Skill from '../../components/skill/Skill'
 function Skills() {
   return (
     <div className='skills'>
