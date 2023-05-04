@@ -62,12 +62,11 @@
           textarea {
             resize: none;
             border: none;
-            border-bottom: 1px solid var(--faintest-col);
             outline: none;
             background-color: var(--input-col);
             font-family: var(--para-font);
 
-            color: var(--text-col);
+            color: var(--text-light-col);
             font-size: var(--p-font-size);
           }
 

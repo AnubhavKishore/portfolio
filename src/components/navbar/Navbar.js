@@ -2,20 +2,19 @@ import React from 'react'
 import './navbar.scss'
 import SubNav from '../res-nav/SubNav'
 import { useDispatch, useSelector } from 'react-redux'
-import { toggleSubNav, toggleTheme } from '../../redux/slices/utilsSlice'
+import { scrollPage, toggleSubNav, toggleTheme } from '../../redux/slices/utilsSlice'
 
 function Navbar() {
 
-    const w = window.innerWidth < 430;
     const subNavActive = useSelector(s => s.utilsReducer.subNavActive);
     const darkTheme = useSelector(s => s.utilsReducer.darkTheme);
     const dispatch = useDispatch();
-    
-    localStorage.setItem('selected-dark-theme',darkTheme)
+
+    localStorage.setItem('selected-dark-theme', darkTheme)
 
     function handleSubnav() {
 
-        dispatch(toggleSubNav(subNavActive !== null ? !subNavActive : true))
+        dispatch(toggleSubNav(!subNavActive))
     }
 
     function handleTheme() {
@@ -24,12 +23,26 @@ function Navbar() {
     }
 
 
+    
+    function handleAClick(e) {
+        const navHeight = document.querySelector('.navbar')?.offsetHeight;
+        dispatch(scrollPage(e,navHeight))
+
+    }
+
+   
+
+
+
+
+
 
 
     return (<>
-        <nav className='navbar'>
+        <nav id='nav' className='navbar'>
             <div className="container">
                 <div className="content">
+
 
 
                     <div id='left-nav' className="left">
@@ -39,14 +52,15 @@ function Navbar() {
 
                     <div className="right" id="right-nav">
                         <ul>
-                            <li><a href="/" className='home' id='home' >Home</a></li>
-                            <li><a href="/" className='about' id='about' >About</a></li>
-                            <li><a href="/" className='skills' id='skills' >Skills</a></li>
-                            <li><a href="/" className='contact me' id='contact me' >Contact me</a></li>
+                            <li><a onClick={handleAClick} href='/' className='home' id='home' >Home</a></li>
+                            <li><a href="/" onClick={handleAClick} className='about' id='about' >About</a></li>
+                            <li><a href="/" onClick={handleAClick} className='projects' id='projects' >Projects</a></li>
+                            <li><a href="/" onClick={handleAClick} className='skills' id='skills' >Skills</a></li>
+                            <li><a href="/" onClick={handleAClick} className='contact me' id='contact me' >Contact me</a></li>
                         </ul>
 
-                        <i onClick={handleSubnav} className={`uil uil-${w && subNavActive ? 'times-circle' : 'apps'}`}></i>
-                       
+                        <i onClick={handleSubnav} className={`uil uil-${subNavActive ? 'times-circle' : 'apps'}`}></i>
+
 
 
                         <i onClick={handleTheme} id="dark-icon" className={`uil ${darkTheme ? "uil-sun" : "uil-moon"}`}></i>

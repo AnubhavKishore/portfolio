@@ -16,7 +16,7 @@ function Project() {
 
                     <div className="slider">
                         <div className="arrow center left-icon">
-                            <i className="uil uil-arrow-circle-left"></i>
+                            <i className="uil uil-angle-left-b"></i>
                         </div>
 
                         <div className="each-slide">
@@ -57,7 +57,7 @@ function Project() {
 
 
                         <div className="arrow right-icon">
-                            <i className="uil uil-arrow-circle-right"></i>
+                            <i className="uil uil-angle-right-b"></i>
                         </div>
 
                     </div>

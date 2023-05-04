@@ -1,21 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Carter+One&family=Domine:wght@500&family=Merriweather&family=Playfair+Display:wght@500&family=Poppins:wght@400;500&family=Roboto+Slab:wght@500&display=swap");
+
+
 html {
   scroll-behavior: smooth;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
+  
 }
+
+
+
 :root {
   --header-height: 4rem;
-
   --hue-color: 250;
 
-  --first-color: hsl(var(--hue-color), 69%, 61%);
-  /* --first-col-sec-col: hsl(250, 69%, 61%); */
-  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-  --first-color-lighter: hsl(250, 92%, 85%);
-
-  --title-col: hsl(250, 8%, 15%);
   --text-col: hsl(250, 8%, 45%);
-  --text-light-col: hsl(250, 8%, 65%);
 
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -34,6 +33,9 @@ html {
   --container-color: #fff;
 
   --footer-col: hsl(250, 69%, 61%);
+
+  
+  --text-light-col:hsl(0, 0%, 42%);
 
   --faintest-col: hsl(250deg 21.46% 90.18%);
   --white-col: #fff;
@@ -94,6 +96,8 @@ body {
 body.dark-theme {
   --body-color: hsl(250, 28%, 12%);
   --container-color: hsl(250, 28%, 12%);
+  
+  --text-light-col:hsl(0, 0%, 80%);
 
   --white-col: #000000;
   --black-col: #ffffff;

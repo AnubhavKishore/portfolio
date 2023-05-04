@@ -5,8 +5,7 @@ import Primbtn from '../../components/Primary btn/Primbtn'
 
 
 function Home() {
-
-
+    
 
 
     return (

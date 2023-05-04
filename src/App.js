@@ -7,41 +7,39 @@ import Project from "./sections/Projects/Project";
 import Skills from "./sections/skills/Skills";
 
 import './App.scss'
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import Totop from "./components/totop/Totop.js";
+import { toggleSubNav } from "./redux/slices/utilsSlice.js";
 
 function App() {
   const darkTheme = useSelector(s => s.utilsReducer.darkTheme);
 
 
-  if(darkTheme){
+
+  if (darkTheme) {
     document.body.classList.add('dark-theme');
-  }else{
-    
+  } else {
+
     document.body.classList.remove('dark-theme');
   }
 
 
 
-
-
-
-
-
-
-
+  const dispatch = useDispatch()
 
 
 
   return (
     <>
       <Navbar />
-      <main className="all-sections">
-        <Home />
-        <About />
-        <Project />
-        <Skills />
-        <Contact />
-      </main>
+      <main onScroll={()=>dispatch(toggleSubNav(false))} className="all-sections">
+      <Home />
+      <About />
+      <Project />
+      <Skills />
+      <Contact />
+    </main >
+        <Totop/>
 
       <Footer />
 
