@@ -37,7 +37,8 @@
 
           .heading {
             .head {
-              font-size: var(--h3-font-size);
+              font-size: var(--h4-font-size);
+              color: var(--allh-col);
             }
           }
 
@@ -66,10 +67,7 @@
       text-align: center;
     }
   }
-
 }
-
-
 
 @media screen and (max-width: 768px) {
   .project {
@@ -116,22 +114,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 430px) {
   .project {
     height: fit-content;
@@ -144,8 +126,6 @@
           font-size: var(--media-h6-font-size);
         }
       }
-
-     
     }
   }
 }
