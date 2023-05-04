@@ -1,5 +1,7 @@
 .About {
   min-height: calc(100vh - var(--header-height));
+  
+  scroll-behavior: smooth;
 
   .content {
     display: flex;

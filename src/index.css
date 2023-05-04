@@ -52,7 +52,7 @@ html {
   --allh-font: "Merriweather", serif;
   --para-font: "Domine", sans-serif;
 
-  --h0-font-size: 3rem;
+  --h0-font-size: 2.6rem;
   --h1-font-size: 2.5rem;
   --h4-font-size: 1.5rem;
   --h6-font-size: 1.2rem;
@@ -148,7 +148,7 @@ p {
   font-size: var(--p-font-size);
 }
 
-a {
+a,Link {
   color: black;
 }
 
@@ -213,7 +213,7 @@ li {
 
 @media screen and (max-width: 430px) {
   .btn {
-    font-size: var(--media-btn-font-size);
+    font-size: var(--media-h4-font-size);
   }
 
   .uil {

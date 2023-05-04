@@ -7,9 +7,11 @@ import Project from "./sections/Projects/Project";
 import Skills from "./sections/skills/Skills";
 
 import './App.scss'
-import { useDispatch, useSelector } from "react-redux";
 import Totop from "./components/totop/Totop.js";
-import { toggleSubNav } from "./redux/slices/utilsSlice.js";
+import { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useSelector } from "react-redux";
 
 function App() {
   const darkTheme = useSelector(s => s.utilsReducer.darkTheme);
@@ -24,22 +26,30 @@ function App() {
   }
 
 
-
-  const dispatch = useDispatch()
+  useEffect(() => {
+    AOS.init({ 
+      duration: 1000,
+      once:true
+     })
+  }, [])
 
 
 
   return (
     <>
       <Navbar />
-      <main onScroll={()=>dispatch(toggleSubNav(false))} className="all-sections">
-      <Home />
-      <About />
-      <Project />
-      <Skills />
-      <Contact />
-    </main >
-        <Totop/>
+      <main className="all-sections">
+        
+          <Home />
+          <About />
+
+          <Project />
+          <Skills />
+
+          <Contact />
+
+      </main >
+      <Totop />
 
       <Footer />
 

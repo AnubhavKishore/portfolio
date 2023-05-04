@@ -6,7 +6,7 @@ import Primbtn from '../../components/Primary btn/Primbtn'
 
 function Contact() {
     return (
-        <div className='contact'>
+        <div id='scroll-contact' data-aos="fade-up" className='contact'>
             <div className="container">
                 <div className="content flex-col">
                     <SecHead head="Contact Me" subhead="Get in touch" />

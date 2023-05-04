@@ -5,15 +5,15 @@ import Primbtn from '../../components/Primary btn/Primbtn'
 
 
 function Home() {
-    
+
 
 
     return (
-        <div className='Home'>
+        <div id='scroll-home' className='Home'>
             <div className="container">
                 <div className="content">
 
-                    <div className="left" id="left-home">
+                    <div  data-aos="fade-right" className="left" id="left-home">
                         <div className="details">
                             <h1 className="head">
                                 Hi, I'm Abhishek Sharma
@@ -50,11 +50,10 @@ function Home() {
                                     </li>
                                     <li>
                                         <a href="/">
-                                            <i 
-                                            // className={`uil2 fa fa-instagram`}
-                                            className='uil2 fa-brands fa-instagram'
-                                            
-                                            id="uil-instagram-alt" aria-hidden="true"></i>
+                                            <i
+                                                className='uil2 fa-brands fa-instagram'
+
+                                                id="uil-instagram-alt" aria-hidden="true"></i>
 
                                         </a>
                                     </li>
@@ -63,7 +62,7 @@ function Home() {
                             </div>
 
                             <div className="buttons">
-                                
+
                                 <Primbtn value="My Resume" icon={<i className="uil uil-bag"></i>} />
                                 <Primbtn value="Contact Me" icon={<i className="uil uil-message"></i>} />
                             </div>
@@ -74,7 +73,7 @@ function Home() {
 
                     </div>
 
-                    <div className="right center" id="right-home">
+                    <div  data-aos="fade-left" className="right center" id="right-home">
 
                         <div className="profile-img center">
 

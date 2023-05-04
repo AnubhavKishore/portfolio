@@ -2,7 +2,8 @@ import React from 'react'
 import './navbar.scss'
 import SubNav from '../res-nav/SubNav'
 import { useDispatch, useSelector } from 'react-redux'
-import { scrollPage, toggleSubNav, toggleTheme } from '../../redux/slices/utilsSlice'
+import { toggleSubNav, toggleTheme } from '../../redux/slices/utilsSlice'
+import { Link } from 'react-scroll/modules'
 
 function Navbar() {
 
@@ -23,14 +24,7 @@ function Navbar() {
     }
 
 
-    
-    function handleAClick(e) {
-        const navHeight = document.querySelector('.navbar')?.offsetHeight;
-        dispatch(scrollPage(e,navHeight))
 
-    }
-
-   
 
 
 
@@ -52,11 +46,23 @@ function Navbar() {
 
                     <div className="right" id="right-nav">
                         <ul>
-                            <li><a onClick={handleAClick} href='/' className='home' id='home' >Home</a></li>
-                            <li><a href="/" onClick={handleAClick} className='about' id='about' >About</a></li>
-                            <li><a href="/" onClick={handleAClick} className='projects' id='projects' >Projects</a></li>
-                            <li><a href="/" onClick={handleAClick} className='skills' id='skills' >Skills</a></li>
-                            <li><a href="/" onClick={handleAClick} className='contact me' id='contact me' >Contact me</a></li>
+                            <li>
+                                <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-home" className='home'>Home</Link>
+
+                            </li>
+                            <li>
+                                <Link duration={5} to="scroll-about" smooth={true} offset={-70} activeClass='active' className='about' >About</Link>
+
+                            </li>
+                            <li>
+                                <Link duration={5} to='scroll-proj' smooth={true} offset={-70} activeClass='active' className='projects'  >Projects</Link>
+                            </li>
+                            <li>
+                                <Link duration={5} to='scroll-skills' smooth={true} offset={-70} activeClass='active' className='skills' >Skills</Link>
+                            </li>
+                            <li>
+                                <Link duration={5} to='scroll-contact' offset={-70} smooth={true} className='contact me'  >Contact me</Link>
+                            </li>
                         </ul>
 
                         <i onClick={handleSubnav} className={`uil uil-${subNavActive ? 'times-circle' : 'apps'}`}></i>

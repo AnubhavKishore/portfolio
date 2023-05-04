@@ -8,7 +8,7 @@ function Project() {
 
 
     return (
-        <div className='project'>
+        <div id='scroll-proj' data-aos="fade-up" className='project'>
             <div className="container">
                 <div className="content">
 

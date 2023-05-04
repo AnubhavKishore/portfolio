@@ -21,10 +21,10 @@
 
       grid-template-columns: repeat(3, 1fr);
 
-      overflow: none;
 
       gap: 20px 10px;
       li {
+        height: fit-content;
         a {
           color: var(--black-col);
           i {

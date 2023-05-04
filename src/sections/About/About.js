@@ -8,13 +8,13 @@ import Primbtn from '../../components/Primary btn/Primbtn'
 
 function About() {
     return (
-        <div className='About'>
+        <div id='scroll-about' data-aos="fade-up" className='About'>
             <div className="container">
                 <div className="content">
                    
                     <SecHead subhead="My Introduction" head="About Me" />
 
-                    <div className="mid">
+                    <div data-aos="zoom-in" className="mid">
                         <div className="img">
                             <img src={profilepic} alt="" />
 

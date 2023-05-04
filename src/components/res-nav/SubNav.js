@@ -1,58 +1,53 @@
 import React from 'react'
 import './subnav.scss'
 import { useDispatch, useSelector } from 'react-redux';
-import { SubScrollPage} from '../../redux/slices/utilsSlice';
-
+import { Link } from 'react-scroll/modules';
+import { toggleSubNav } from '../../redux/slices/utilsSlice';
 
 function SubNav() {
-    const subNavActive = useSelector(s=>s.utilsReducer.subNavActive);
-    const dispatch =useDispatch();
-   
-    
-    function handleAClick(e) {
-        dispatch(SubScrollPage(e));
+    const dispatch = useDispatch()
+    const subNavActive = useSelector(s => s.utilsReducer.subNavActive);
 
-    }
 
 
 
 
 
     return (
-        <div style={{display :subNavActive ? 'block':'none'  }} id="subnav" className='subnav'>
+        <div style={{ display: subNavActive ? 'block' : 'none' }} id="subnav" className='subnav'>
             <div className="content">
-                <ul>
+                <ul >
                     <li>
-                        <a onClick={handleAClick}  href="/" className='home' id='home' >
-                            <i className="uil uil-estate"></i>
-                            Home
-                        </a>
+                        <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-home" > <i className="uil uil-estate"></i>
+                            Home</Link>
+
+
                     </li>
 
                     <li>
-                        <a onClick={handleAClick} href="/" className='about' id='about' >
-                            <i className="uil uil-user"></i>
-                            About
-                        </a>
+                        <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-about" ><i className="uil uil-user"></i>
+                            About</Link>
+
+
                     </li>
                     <li>
-                        <a onClick={handleAClick} href="/" className='' id='skills' >
-                            <i className="uil uil-file-alt"></i>
-                            Skills
-                        </a>
+                        <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-skills"><i className="uil uil-file-alt"></i>
+                            Skills</Link>
+
+
                     </li>
 
                     <li>
-                        <a onClick={handleAClick} href="/" className='e' id='projects' >
-                            <i className="uil uil-scenery"></i>
-                            Projects
-                        </a>
+                        <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-proj" ><i className="uil uil-scenery"></i>
+                            Projects</Link>
+
+
                     </li>
                     <li>
-                        <a onClick={handleAClick} href="/" className='' id='contact me' >
-                            <i className="uil uil-envelope"></i>
-                            Contact me
-                        </a>
+                        <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-contact" ><i className="uil uil-envelope"></i>
+                            Contact me</Link>
+
+
                     </li>
                 </ul>
             </div>

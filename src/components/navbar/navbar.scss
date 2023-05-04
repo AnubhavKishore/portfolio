@@ -18,6 +18,7 @@
       h2 {
         a{
           color: white;
+          font-size: var(--big-font-size);
 
         }
         display: inline;
@@ -95,8 +96,9 @@
       
       .left {
         h2 {
-          font-size: var(--media-h4-font-size);
-        }
+        a{
+          font-size: var(--media-h1-font-size);
+        }}
       }
       .right {
         ul {
@@ -139,7 +141,7 @@
         }
         .uil{
           
-          font-size: var(--p-font-size);
+          font-size: var(--btn-font-size);
         }
         
       }

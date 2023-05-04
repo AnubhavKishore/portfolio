@@ -1,5 +1,6 @@
 .Home {
   height: calc(100vh - var(--header-height));
+  overflow-y: hidden;
   .content {
     height: 100%;
     display: flex;
