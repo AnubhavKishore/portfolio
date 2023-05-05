@@ -2,6 +2,7 @@ import React from 'react'
 import './home.scss'
 import profilepic from '../../assets/profilepic.png'
 import Primbtn from '../../components/Primary btn/Primbtn'
+import { Typewriter } from 'react-simple-typewriter'
 
 
 function Home() {
@@ -9,17 +10,32 @@ function Home() {
 
 
     return (
+
         <div id='scroll-home' className='Home'>
+            <span>
+
+
+            </span>
             <div className="container">
                 <div className="content">
 
-                    <div  data-aos="fade-right" className="left" id="left-home">
+                    <div data-aos="fade-right" className="left" id="left-home">
                         <div className="details">
                             <h1 className="head">
                                 Hi, I'm Abhishek Sharma
                             </h1>
                             <h4 className="position">
-                                Web Developer
+                                I'm {' '}
+                                <Typewriter
+                                    words={['Frontend Developer', 'Backend Developer']}
+                                    loop={Infinity}
+                                    cursor
+                                    cursorStyle='|'
+                                    typeSpeed={50}
+                                    deleteSpeed={25}
+
+                                />
+
                             </h4>
                             <p className="desc">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, distinctio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique tenetur dolores corporis.
@@ -73,7 +89,7 @@ function Home() {
 
                     </div>
 
-                    <div  data-aos="fade-left" className="right center" id="right-home">
+                    <div data-aos="fade-left" className="right center" id="right-home">
 
                         <div className="profile-img center">
 

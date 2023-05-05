@@ -1,12 +1,21 @@
 import React from 'react'
 import './subnav.scss'
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-scroll/modules';
-import { toggleSubNav } from '../../redux/slices/utilsSlice';
 
 function SubNav() {
-    const dispatch = useDispatch()
     const subNavActive = useSelector(s => s.utilsReducer.subNavActive);
+
+
+    const active={ 
+        visibility:"visible",
+        opacity:"1"
+      }
+    const passive={ 
+        top: "-1%",
+        visibility:"hidden",
+        opacity:"0"
+      }
 
 
 
@@ -14,7 +23,7 @@ function SubNav() {
 
 
     return (
-        <div style={{ display: subNavActive ? 'block' : 'none' }} id="subnav" className='subnav'>
+        <div style={subNavActive? active : passive} id="subnav" className='subnav'>
             <div className="content">
                 <ul >
                     <li>
@@ -30,16 +39,17 @@ function SubNav() {
 
 
                     </li>
-                    <li>
-                        <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-skills"><i className="uil uil-file-alt"></i>
-                            Skills</Link>
-
-
-                    </li>
+                    
 
                     <li>
                         <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-proj" ><i className="uil uil-scenery"></i>
                             Projects</Link>
+
+
+                    </li>
+                    <li>
+                        <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-skills"><i className="uil uil-file-alt"></i>
+                            Skills</Link>
 
 
                     </li>

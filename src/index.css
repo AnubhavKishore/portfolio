@@ -31,6 +31,7 @@ html {
   --prim-lighter-col: hsl(250, 92%, 85%);
   --body-color: hsl(250, 60%, 99%);
   --container-color: #fff;
+  --fainter-col:hsl(250deg 21.46% 90.18%);
 
   --footer-col: hsl(250, 69%, 61%);
 
@@ -96,6 +97,8 @@ body {
 body.dark-theme {
   --body-color: hsl(250, 28%, 12%);
   --container-color: hsl(250, 28%, 12%);
+
+  --fainter-col:hsl(0, 0%, 15%);
   
   --text-light-col:hsl(0, 0%, 80%);
 

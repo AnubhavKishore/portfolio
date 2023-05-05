@@ -8,13 +8,16 @@ import Skills from "./sections/skills/Skills";
 
 import './App.scss'
 import Totop from "./components/totop/Totop.js";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleSubNav } from "./redux/slices/utilsSlice.js";
 
 function App() {
+  const dispatch = useDispatch()
   const darkTheme = useSelector(s => s.utilsReducer.darkTheme);
+  const [topActive,setTopActive] = useState(false)
 
 
 
@@ -35,6 +38,19 @@ function App() {
 
 
 
+
+  window.onscroll = ()=>{
+    dispatch(toggleSubNav(false))
+    if (document.documentElement.scrollTop < 600) {
+        setTopActive(false);
+      } else {
+        setTopActive(true)
+      }
+    
+}
+
+
+
   return (
     <>
       <Navbar />
@@ -49,8 +65,11 @@ function App() {
           <Contact />
 
       </main >
-      <Totop />
+      {
+        topActive && 
+        <Totop/>
 
+      }
       <Footer />
 
 
