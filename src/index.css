@@ -32,6 +32,8 @@ html {
   --body-color: hsl(250, 60%, 99%);
   --container-color: #fff;
   --fainter-col:hsl(250deg 21.46% 90.18%);
+  
+  --nav-active-col:rgb(0, 254, 76);
 
   --footer-col: hsl(250, 69%, 61%);
 
@@ -104,6 +106,7 @@ body.dark-theme {
 
   --white-col: #000000;
   --black-col: #ffffff;
+
 
   --footer-col: hsl(250, 28%, 19%);
 

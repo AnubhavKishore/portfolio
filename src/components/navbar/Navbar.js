@@ -47,21 +47,21 @@ function Navbar() {
                     <div className="right" id="right-nav">
                         <ul>
                             <li>
-                                <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-home" className='home'>Home</Link>
+                                <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-home"  spy={true} className='home'>Home</Link>
 
                             </li>
                             <li>
-                                <Link duration={5} to="scroll-about" smooth={true} offset={-70} activeClass='active' className='about' >About</Link>
+                                <Link duration={5} to="scroll-about" smooth={true} offset={-70} activeClass='active' spy={true} className='about' >About</Link>
 
                             </li>
                             <li>
-                                <Link duration={5} to='scroll-proj' smooth={true} offset={-70} activeClass='active' className='projects'  >Projects</Link>
+                                <Link duration={5} to='scroll-proj' smooth={true} offset={-70} activeClass='active' spy={true} className='projects'  >Projects</Link>
                             </li>
                             <li>
-                                <Link duration={5} to='scroll-skills' smooth={true} offset={-70} activeClass='active' className='skills' >Skills</Link>
+                                <Link duration={5} to='scroll-skills' smooth={true} offset={-70} activeClass='active' spy={true} className='skills' >Skills</Link>
                             </li>
                             <li>
-                                <Link duration={5} to='scroll-contact' offset={-70} smooth={true} className='contact me'  >Contact me</Link>
+                                <Link duration={5} to='scroll-contact' offset={-70} smooth={true} className='contact me' spy={true}  >Contact me</Link>
                             </li>
                         </ul>
 

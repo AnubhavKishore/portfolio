@@ -61,6 +61,10 @@
               color: var(--faintest-col);
             }
           }
+          .active{
+
+            color: var(--nav-active-col);
+          }
         }
       }
       
@@ -72,6 +76,10 @@
     }
   }
 }
+
+
+
+
 
 
 
