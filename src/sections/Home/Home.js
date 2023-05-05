@@ -26,15 +26,18 @@ function Home() {
                             </h1>
                             <h4 className="position">
                                 I'm {' '}
-                                <Typewriter
-                                    words={['Frontend Developer', 'Backend Developer']}
-                                    loop={Infinity}
-                                    cursor
-                                    cursorStyle='|'
-                                    typeSpeed={50}
-                                    deleteSpeed={25}
+                                <span id='typewriter'>
 
-                                />
+                                    <Typewriter
+                                        words={['Frontend Developer', 'Backend Developer']}
+                                        loop={Infinity}
+                                        cursor
+                                        cursorStyle='|'
+                                        typeSpeed={50}
+                                        deleteSpeed={25}
+
+                                    />
+                                </span>
 
                             </h4>
                             <p className="desc">
