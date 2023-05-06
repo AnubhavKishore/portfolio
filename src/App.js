@@ -13,11 +13,14 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useDispatch, useSelector } from "react-redux";
 import { toggleSubNav } from "./redux/slices/utilsSlice.js";
+import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
   const dispatch = useDispatch()
   const darkTheme = useSelector(s => s.utilsReducer.darkTheme);
-  const [topActive, setTopActive] = useState(false)
+  const [topActive, setTopActive] = useState(false);
+
+  const toastData = useSelector(s=>s.utilsReducer.toastData)
 
 
 
@@ -35,6 +38,22 @@ function App() {
       once: true
     })
   }, [])
+
+  useEffect(() => {
+    switch (toastData.type) {
+      case 'success':
+        toast.success(toastData.message)
+
+        break;
+      case "failure":
+        toast.error(toastData.message)
+
+        break;
+
+      default:
+
+    }
+  }, [toastData])
 
 
 
@@ -54,6 +73,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Toaster/>
       <main className="all-sections">
 
         <Home />

@@ -5,7 +5,7 @@
   .content {
     max-width: 97vw;
     display: flex;
-    gap: 25px;
+    gap: 35px;
     flex-direction: column;
     scroll-behavior: smooth;
 
@@ -15,7 +15,7 @@
 
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 30px;
       
       .slider-controller {
         display: flex;
@@ -47,6 +47,7 @@
         
 
         .slider {
+          
           .slider-controller {
             display: flex;
             align-items: center;

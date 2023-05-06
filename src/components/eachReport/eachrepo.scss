@@ -1,0 +1,31 @@
+.each-report {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .top {
+    h6 {
+      color: var(--black-col);
+    }
+  }
+  .bottom {
+    display: flex;
+    border-radius: 5px;
+
+    margin: 0px auto;
+    width: 65%;
+    height: 5px;
+    background-color: var(--prim-lighter-col);
+    .progress-line {
+      border-radius: 5px;
+      height: 5px;
+      background-color: var(--prim-btn-col);
+    }
+    .for-html {
+      width: 80%;
+    }
+    .for-css {
+      width: 70%;
+    }
+  }
+}

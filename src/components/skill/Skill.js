@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import './skill.scss'
+import EachReport from '../eachReport/EachReport';
+import EachProject from '../Each-proj/EachProject';
 
-function Skill() {
+function Skill({content}) {
     const [active, setActive] = useState(true)
     function handleSkillClick() {
         setActive(!active);
 
     }
+    console.log(content);
     return (
         <div className="skill-overlay">
 
@@ -15,11 +18,11 @@ function Skill() {
                 <div onClick={handleSkillClick} className="head">
                     <i className="uil uil-brackets-curly skill-icons"></i>
                     <h4 className="heading">
-                        Frontend Developer
+                        {content?.heading}
                     </h4>
 
                     <p className="desc">
-                        More than 4 years
+                        {content?.desc}
                     </p>
                     <i className={`angle uil2 uil-angle-${active ? 'up':'down'}`}></i>
                     
@@ -28,33 +31,17 @@ function Skill() {
 
 
                 <div style={{ display: active ? 'flex' : 'none' }} className="report">
-                    <div className="each-report">
-
-                        <div className="top around">
-                            <h6 className="html-skill">HTML</h6>
-                            <p className="percent">80%</p>
-
-                        </div>
-                        <div className="bottom">
-                            <span className='progress-line for-html' />
-
-                        </div>
-                    </div>
+                    
+                    {
+                        content?.reports?.map((item,i)=>{
+                            return(
+                                <EachReport key={i} content={item} />
+                            )
+                        })
+                    }
 
 
-                    <div className="each-report">
-
-                        <div className="top around">
-                            <h6 className="html">CSS</h6>
-                            <p className="percent">70%</p>
-
-                        </div>
-                        <div className="bottom">
-                            <span className='progress-line for-css' />
-
-                        </div>
-                    </div>
-
+                   
 
 
 

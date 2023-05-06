@@ -1,9 +1,9 @@
 .contact {
   min-height: calc(100vh - var(--header-height));
-
   .content {
     gap: 30px;
     height: 100%;
+    
 
     .bottom {
       flex-wrap: wrap;
@@ -12,13 +12,16 @@
       .left {
         flex: 0.6;
         gap: 20px;
-        min-width: 228px;
+        min-width: 270px;
 
         .each-mode {
           display: grid;
-          grid-template-rows: 1fr 1fr;
+          grid-template-rows: 1fr auto;
           grid-template-columns: 0.7fr 3fr;
           gap: 10px;
+         .email{
+          font-size: var(--media-btn-font-size);
+         }
 
           i {
             grid-column: 1/2;

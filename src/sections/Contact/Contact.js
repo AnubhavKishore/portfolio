@@ -1,10 +1,55 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import SecHead from '../../components/secHead/SecHead'
 import './contact.scss'
 import Primbtn from '../../components/Primary btn/Primbtn'
+import { useDispatch } from 'react-redux'
+import { showtoast } from '../../redux/slices/utilsSlice'
 
 
 function Contact() {
+    const name = useRef(null)
+    const email = useRef(null)
+    const title = useRef(null)
+    const message = useRef(null)
+    const dispatch = useDispatch()
+
+    function handleSubmit() {
+
+        if (name.current.value === "" || email.current.value === "" || title.current.value === "" || message.current.value === "") {
+
+            dispatch(showtoast({
+                type: 'failure',
+                message: 'All fields required!'
+            }))
+            return;
+        }
+        name.current.value = "";
+        email.current.value = "";
+        title.current.value = "";
+        message.current.value = ""
+
+        dispatch(showtoast({
+            type: 'success',
+            message: 'Form Submitted'
+        }))
+
+    }
+    function handleReset(e) {
+        name.current.value = "";
+        email.current.value = "";
+        title.current.value = "";
+        message.current.value = ""
+
+        dispatch(showtoast({
+            type: 'success',
+            message: 'Form Reset'
+        }))
+    }
+
+
+
+
+
     return (
         <div id='scroll-contact' data-aos="fade-up" className='contact'>
             <div className="container">
@@ -13,26 +58,26 @@ function Contact() {
 
                     <div className="bottom">
                         <div className="left flex-col">
-                            <div className="each-mode hover-link">
+                            {/* <div className="each-mode hover-link">
                                 <i className="uil uil-phone-volume"></i>
                                 <h4 className="txt call-txt">Call Me</h4>
                                 <p className="number">9999-9999-99</p>
 
-                            </div>
+                            </div> */}
 
 
 
                             <div className="each-mode hover-link">
                                 <i className="uil uil-envelope "></i>
                                 <h4 className="txt email-txt">Email</h4>
-                                <p className="email">dummy@gmail.com</p>
+                                <p className="email">abhishek605404@gmail.com</p>
 
                             </div>
 
                             <div className="each-mode hover-link">
                                 <i className="uil uil-map-marker"></i>
                                 <h4 className="txt location-txt">Location</h4>
-                                <p className="email">New-Delhi 110059</p>
+                                <p className="email">New-Delhi</p>
 
                             </div>
 
@@ -40,11 +85,11 @@ function Contact() {
                         </div>
 
                         <div className="right flex-col">
-                            <form className='form'>
+                            <form onSubmit={handleSubmit} className='form'>
 
                                 <div className="name">
                                     <label htmlFor="name-input">Name</label>
-                                    <input type="text" id="name-input" />
+                                    <input required ref={name} type="text" id="name-input" />
 
 
                                 </div>
@@ -52,26 +97,33 @@ function Contact() {
                                 <div className="req-email">
 
                                     <label htmlFor="email-input">Email</label>
-                                    <input type='email' id="email-input" />
+                                    <input required ref={email} type='email' id="email-input" />
 
                                 </div>
 
                                 <div className="title">
                                     <label htmlFor="title-input">Title</label>
-                                    <input type="text" id="title-input" />
+                                    <input required ref={title} type="text" id="title-input" />
 
                                 </div>
 
                                 <div className="message">
                                     <label htmlFor="input-message">Message</label>
-                                    <textarea maxLength={600} id='input-message' cols="" rows="10"></textarea>
+                                    <textarea required ref={message} maxLength={600} id='input-message' cols="" rows="10"></textarea>
 
                                 </div>
+
                             </form>
 
                             <div className="buttons center">
-                                <Primbtn value="Submit" icon={<i className="uil uil-message"></i>} />
-                                <Primbtn value="Reset" icon={<i className="uil uil-history-alt"></i>} />
+                                <div onMouseUp={handleSubmit}>
+
+                                    <Primbtn value="Submit" icon={<i className="uil uil-message"></i>} />
+                                </div>
+                                <div onMouseUp={handleReset}>
+
+                                    <Primbtn value="Reset" icon={<i className="uil uil-history-alt"></i>} />
+                                </div>
                             </div>
 
                         </div>

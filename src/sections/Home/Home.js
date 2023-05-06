@@ -41,7 +41,7 @@ function Home() {
 
                             </h4>
                             <p className="desc">
-                                Undergrad Computer Science Student at Delhi Technological University.
+                                Passionate undergrad computer science student at Delhi Technological University (DTU). A Full Stack MERN developer with hands-on experience and a solid understanding of web development.
                             </p>
 
                         </div>

@@ -49,7 +49,7 @@ html {
   --h1-col: #212121;
   --btn-col: #212121;
   --allh-col: hsl(250, 8%, 45%);
-  --para-col: hsl(250, 6%, 61%);
+  --para-col: hsl(250, 0%, 28%);
 
   --h1-font: "Roboto Slab", serif;
   --allh-font: "Merriweather", serif;
@@ -75,7 +75,7 @@ html {
   --media-h4-font-size: 1.1rem;
 
   --media-h6-font-size: 0.95rem;
-  --media-p-font-size: 0.9rem;
+  --media-p-font-size: .96rem;
 
   --media-uil-font-size: 1rem;
   --media-uil2-font-size: 1.5rem;

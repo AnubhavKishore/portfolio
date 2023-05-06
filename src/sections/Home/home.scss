@@ -1,5 +1,6 @@
 .Home {
   height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
   overflow: hidden;
   .content {
     height: 100%;
