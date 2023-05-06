@@ -11,7 +11,7 @@ function About() {
         <div id='scroll-about' data-aos="fade-up" className='About'>
             <div className="container">
                 <div className="content">
-                   
+
                     <SecHead subhead="My Introduction" head="About Me" />
 
                     <div data-aos="zoom-in" className="mid">
@@ -28,7 +28,7 @@ function About() {
                                 <p id="desc">
                                     Hi, I am Abhishek Sharma. A Computer Science Undergrad Student at Delhi Technological University.
                                     I am a tech-enthusiast and a full stack developer.
-                                    I am prolificiant in Reactjs, Nodejs, MongoDB,Expressjs (MERN STACK),CSS ,HTML5 
+                                    I am prolificiant in Reactjs, Nodejs, MongoDB,Expressjs (MERN STACK),CSS ,HTML5
                                 </p>
 
                             </div>
@@ -72,7 +72,7 @@ function About() {
                             </div>
 
                             <div className="buttons center">
-                            <Primbtn value="My Resume" icon={<i className="uil uil-download-alt"></i>} />
+                                <Primbtn value="My Resume" icon={<i className="uil uil-download-alt"></i>} />
                             </div>
                         </div>
 
