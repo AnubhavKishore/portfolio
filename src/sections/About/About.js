@@ -26,7 +26,9 @@ function About() {
                         <div className="details">
                             <div className="top">
                                 <p id="desc">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, aliquam ut ex sunt praesentium odio perferendis vitae. Officiis rerum error aut architecto totam quae maxime saepe, eligendi hic at. Accusantium temporibus nesciunt aliquam omnis ipsum consequuntur quos cupiditate assumenda aliquid rerum rem minima at, blanditiis labore, iure ipsa. Cumque, consectetur.
+                                    Hi, I am Abhishek Sharma. A Computer Science Undergrad Student at Delhi Technological University.
+                                    I am a tech-enthusiast and a full stack developer.
+                                    I am prolificiant in Reactjs, Nodejs, MongoDB,Expressjs (MERN STACK),CSS ,HTML5 
                                 </p>
 
                             </div>

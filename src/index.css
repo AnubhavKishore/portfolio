@@ -31,7 +31,7 @@ html {
   --prim-lighter-col: hsl(250, 92%, 85%);
   --body-color: hsl(250, 60%, 99%);
   --container-color: #fff;
-  --fainter-col:hsl(250deg 21.46% 90.18%);
+  --fainter-col:hsl(250deg 43% 97%);
   
   --nav-active-col:rgb(0, 254, 76);
 
@@ -155,6 +155,7 @@ p {
 }
 
 a,Link {
+  cursor: pointer;
   color: black;
 }
 

@@ -33,13 +33,6 @@ function SubNav() {
 
                     </li>
 
-                    <li>
-                        <Link  spy={true} duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-about" ><i className="uil uil-user"></i>
-                            About</Link>
-
-
-                    </li>
-                    
 
                     <li>
                         <Link spy={true} duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-proj" ><i className="uil uil-scenery"></i>
@@ -47,6 +40,13 @@ function SubNav() {
 
 
                     </li>
+                    <li>
+                        <Link  spy={true} duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-about" ><i className="uil uil-user"></i>
+                            About</Link>
+
+
+                    </li>
+                    
                     <li>
                         <Link spy={true} duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-skills"><i className="uil uil-file-alt"></i>
                             Skills</Link>

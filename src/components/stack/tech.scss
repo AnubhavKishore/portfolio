@@ -1,0 +1,19 @@
+.tech{
+    .content{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        
+        gap: 8px;
+        .logo{
+            img{
+                width: 25px;
+            }
+        }
+
+        .title{
+            font-size: var(--p-font-size);
+            color: var(--black-col);
+        }
+    }
+}

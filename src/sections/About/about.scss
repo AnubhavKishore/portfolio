@@ -51,14 +51,7 @@
 
     .content {
       gap: 10px;
-      .header {
-        .head {
-          font-size: var(--media-h1-font-size);
-        }
-        .intro {
-          font-size: var(--media-p-font-size);
-        }
-      }
+      
       .mid {
         .img {
           img {
@@ -100,15 +93,7 @@
 
     .content {
       gap: 10px;
-      .header {
-        .head {
-          font-size: var(--media-h1-font-size);
-        }
-        .intro {
-          font-size: var(--media-h6-font-size);
-        }
-      }
-      
+     
 
       .bottom {
         .count {

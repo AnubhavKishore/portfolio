@@ -51,11 +51,11 @@ function Navbar() {
 
                             </li>
                             <li>
-                                <Link duration={5} to="scroll-about" smooth={true} offset={-70} activeClass='active' spy={true} className='about' >About</Link>
-
+                                <Link duration={5} to='scroll-proj' smooth={true} offset={-70} activeClass='active' spy={true} className='projects'  >Projects</Link>
                             </li>
                             <li>
-                                <Link duration={5} to='scroll-proj' smooth={true} offset={-70} activeClass='active' spy={true} className='projects'  >Projects</Link>
+                                <Link duration={5} to="scroll-about" smooth={true} offset={-70} activeClass='active' spy={true} className='about' >About</Link>
+
                             </li>
                             <li>
                                 <Link duration={5} to='scroll-skills' smooth={true} offset={-70} activeClass='active' spy={true} className='skills' >Skills</Link>

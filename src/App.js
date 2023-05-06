@@ -17,7 +17,7 @@ import { toggleSubNav } from "./redux/slices/utilsSlice.js";
 function App() {
   const dispatch = useDispatch()
   const darkTheme = useSelector(s => s.utilsReducer.darkTheme);
-  const [topActive,setTopActive] = useState(false)
+  const [topActive, setTopActive] = useState(false)
 
 
 
@@ -30,24 +30,24 @@ function App() {
 
 
   useEffect(() => {
-    AOS.init({ 
+    AOS.init({
       duration: 1000,
-      once:true
-     })
+      once: true
+    })
   }, [])
 
 
 
 
-  window.onscroll = ()=>{
+  window.onscroll = () => {
     dispatch(toggleSubNav(false))
     if (document.documentElement.scrollTop < 600) {
-        setTopActive(false);
-      } else {
-        setTopActive(true)
-      }
-    
-}
+      setTopActive(false);
+    } else {
+      setTopActive(true)
+    }
+
+  }
 
 
 
@@ -55,19 +55,20 @@ function App() {
     <>
       <Navbar />
       <main className="all-sections">
-        
-          <Home />
-          <About />
 
-          <Project />
-          <Skills />
+        <Home />
+        <Project />
+        <About />
 
-          <Contact />
+        <Skills />
+
+        <Contact />
+
 
       </main >
       {
-        topActive && 
-        <Totop/>
+        topActive &&
+        <Totop />
 
       }
       <Footer />

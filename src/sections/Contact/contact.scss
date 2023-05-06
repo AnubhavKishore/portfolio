@@ -111,14 +111,7 @@
     width: 100%;
     height: fit-content;
     .content {
-      .header {
-        .head {
-          font-size: var(--media-h1-font-size);
-        }
-        .intro {
-          font-size: var(--media-p-font-size);
-        }
-      }
+      
       .bottom {
         flex-direction: column;
         gap: 20px;
@@ -171,14 +164,7 @@
     width: 100%;
     height: fit-content;
     .content {
-      .header {
-        .head {
-          font-size: var(--media-h1-font-size);
-        }
-        .intro {
-          font-size: var(--media-h6-font-size);
-        }
-      }
+      
     }
   }
 }

@@ -41,7 +41,7 @@ function Home() {
 
                             </h4>
                             <p className="desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, distinctio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique tenetur dolores corporis.
+                                Undergrad Computer Science Student at Delhi Technological University.
                             </p>
 
                         </div>
