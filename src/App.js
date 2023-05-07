@@ -60,7 +60,7 @@ function App() {
 
   window.onscroll = () => {
     dispatch(toggleSubNav(false))
-    if (document.documentElement.scrollTop < 600) {
+    if (document.documentElement.scrollTop < 900) {
       setTopActive(false);
     } else {
       setTopActive(true)

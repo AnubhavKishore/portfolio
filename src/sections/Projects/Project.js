@@ -3,15 +3,71 @@ import './project.scss';
 import SecHead from '../../components/secHead/SecHead';
 import EachProject from '../../components/Each-proj/EachProject';
 
-import thumbtomato from '../../assets/thumbtomato.png'
+import tomatoimg from '../../assets/tomatoimg.png'
+import collegemateimg from '../../assets/collegemateimg.png'
 
 import Glider from 'react-glider';
 import 'glider-js/glider.min.css';
+
+import jsLogo from '../../assets/javascript.svg'
+import cssLogo from '../../assets/css.svg'
+import htmlLogo from '../../assets/html.svg'
 
 
 
 
 function Project() {
+    const projects =[
+        {
+            title : "Tomato",
+            desc:"Tomato is a clone website of the zomato. It is fully responsive website for screens of all dimensions and have an amazing frontend experience.",
+            thumImg:tomatoimg,
+
+            live:"https://tomato-clone-app.netlify.app",
+            github:"https://github.com/abhishek-403/tomato",
+            
+
+            stackUsed:[{
+                head:"HTML",
+                logo:htmlLogo
+            },
+            {
+                head:"CSS",
+                logo:cssLogo
+            },
+            {
+                head:"JavaScript",
+                logo:jsLogo
+            }
+        ]
+
+        },
+        {
+            title : "College Mate",
+            desc:"College Mate provides you the all the neccessaty information about the societies of the certain colleges which includes DTU, NSUT, IITD, IITD, IGDTUW",
+            thumImg:collegemateimg,
+
+            
+            live:"https://collegemate.netlify.app",
+            github:"https://github.com/abhishek-403/collegemate",
+            
+            stackUsed:[{
+                live:"https://collegemate.netlify.app/",
+                head:"HTML",
+                logo:htmlLogo
+            },
+            {
+                head:"CSS",
+                logo:cssLogo
+            },
+            {
+                head:"JavaScript",
+                logo:jsLogo
+            }
+        ]
+
+        }
+    ]
 
 
 
@@ -38,10 +94,16 @@ function Project() {
                             scrollLock
                             slidesToShow={1}>
 
+                            {
+                                projects.map((item,i)=>{
+                                    return(
+                                        <EachProject project={item} key={i}/>
+                                    )
+                                })
+                            }
 
-                            <EachProject desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugit, eius dolorem assumenda autem in voluptatem ea! Pariatur animi esse deserunt odit dignissimos suscipit et ad facere velit quasi."} title={"Tomato"} thumImg={thumbtomato} />
-                            <EachProject desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugit, eius dolorem assumenda autem in voluptatem ea! Pariatur animi esse deserunt odit dignissimos suscipit et ad facere velit quasi."} title={"Tomato"} thumImg={thumbtomato} />
-                            <EachProject desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugit, eius dolorem assumenda autem in voluptatem ea! Pariatur animi esse deserunt odit dignissimos suscipit et ad facere velit quasi."} title={"Tomato"} thumImg={thumbtomato} />
+
+                            
                         </Glider>
                         <div className="slider-controller">
 

@@ -28,46 +28,51 @@ function About() {
                                 <p id="desc">
                                     Hi, I am Abhishek Sharma,    undergrad student pursuing a degree in Computer Science at Delhi Technological University.
                                     Alongside my studies, I actively involve in web development projects and have attained high level of proficiency in crafting dynamic and user-friendly websites. I'm continuously learning and exploring new technologies and with each new project I strive to enhance my skills and create engaging and attractive websites.
-                                    
-                                    
+
+
                                 </p>
 
                             </div>
 
                             <div className="count center">
 
-                                <div className="each-count">
-                                    <h1 className="num">
+                                <div className="social">
+                                    <ul>
+                                        <li>
+                                            <a
+                                                target="_blank" rel="noreferrer"
+                                                href="https://github.com/abhishek-403"
+                                            >
+                                                <i className="uil2 fa-brands fa-github"></i>
 
-                                        05+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" rel="noreferrer"
+                                                href="https://www.linkedin.com/in/abhishek-sharma-84a827212/">
+                                                <i className="uil2 fa-brands fa-linkedin"></i>
 
-                                    </h1>
-                                    <p className="desc">
-                                        Years of experience
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" rel="noreferrer"
+                                                href="https://twitter.com/abhishek_sh01">
+                                                <i className={`uil2 fa-brands fa-twitter`}></i>
 
-                                    </p>
-                                </div>
-                                <div className="each-count ">
-                                    <h1 className="num">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" rel="noreferrer"
+                                                href="https://www.instagram.com/abhishek._404">
+                                                <i
+                                                    className='uil2 fa-brands fa-instagram'
 
-                                        05+
+                                                    id="uil-instagram-alt" aria-hidden="true"></i>
 
-                                    </h1>
-                                    <p className="desc">
-                                        Years of experience
+                                            </a>
+                                        </li>
+                                    </ul>
 
-                                    </p>
-                                </div>
-                                <div className="each-count">
-                                    <h1 className="num">
-
-                                        05+
-
-                                    </h1>
-                                    <p className="desc">
-                                        Years of experience
-
-                                    </p>
                                 </div>
 
                             </div>

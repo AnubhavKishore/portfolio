@@ -12,7 +12,7 @@ function Skills() {
         reports: [
           {
             title: "HTML",
-            progress: "80"
+            progress: "80%"
           },
           {
             title: "CSS",
@@ -32,7 +32,7 @@ function Skills() {
         reports: [
           {
             title: "Node js",
-            progress: "60"
+            progress: "60%"
           },
           {
             title: "Express",

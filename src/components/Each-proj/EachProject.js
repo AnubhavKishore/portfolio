@@ -2,17 +2,14 @@ import React from 'react'
 import './each-proj.scss'
 import Primbtn from '../../components/Primary btn/Primbtn';
 import Tech from '../stack/Tech';
-import reactLogo from '../../assets/react.svg'
-import cssLogo from '../../assets/css.svg'
-import htmlLogo from '../../assets/html.svg'
 
-function EachProject(props) {
+function EachProject({ project }) {
     return (
         <div className='each-proj' >
             <div className="each-slide">
                 <div className="center left">
                     <div className="center thumb-img">
-                        <img src={props.thumImg} alt="" />
+                        <img src={project.thumImg} alt="" />
                     </div>
 
                 </div>
@@ -21,7 +18,7 @@ function EachProject(props) {
 
                     <div className="heading">
                         <h4 className="head">
-                            {props.title}
+                            {project.title}
                         </h4>
                     </div>
 
@@ -29,17 +26,19 @@ function EachProject(props) {
 
                     <div className="mid">
                         <p className="desc">
-                            {props.desc}
+                            {project.desc}
                         </p>
                         <div className="stack-used">
                             <div className="head">
-                                <p>Tech Used</p>
+                                <p>Stack Used</p>
 
                             </div>
                             <div className="logos">
-                                <Tech logo={reactLogo} />
-                                <Tech logo={htmlLogo} />
-                                <Tech logo={cssLogo} />
+                                {
+                                    project.stackUsed.map((item, i) => {
+                                        return <Tech stack={item} key={i} />
+                                    })
+                                }
 
                             </div>
 
@@ -52,8 +51,14 @@ function EachProject(props) {
 
 
                     <div className="buttons">
-                        <Primbtn value="Live" icon={<i className="uil uil-arrow-up-right"></i>} />
-                        <Primbtn value="GitHub" icon={<i className="uil uil-github"></i>} />
+                        <a target="_blank" rel="noreferrer" href={project.live}>
+
+                            <Primbtn value="Live" icon={<i className="uil uil-arrow-up-right"></i>} />
+                        </a>
+                        <a target="_blank" rel="noreferrer" href={project.github}>
+
+                            <Primbtn value="GitHub" icon={<i className="uil uil-github"></i>} />
+                        </a>
                     </div>
 
                 </div>

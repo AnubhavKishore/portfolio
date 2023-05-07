@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './skill.scss'
 import EachReport from '../eachReport/EachReport';
-import EachProject from '../Each-proj/EachProject';
 
 function Skill({content}) {
     const [active, setActive] = useState(true)
@@ -9,7 +8,6 @@ function Skill({content}) {
         setActive(!active);
 
     }
-    console.log(content);
     return (
         <div className="skill-overlay">
 

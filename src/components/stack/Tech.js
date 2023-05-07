@@ -1,16 +1,16 @@
 import React from 'react'
 import './tech.scss'
 
-function Tech(props) {
+function Tech({stack}) {
   return (
     <div className='tech'>
-        <div className="content">
-            <div className="logo">
-                <img src={props.logo} alt="" />
+        <div className="content center">
+            <div className="logo center">
+                <img src={stack.logo} alt="" />
 
             </div>
             <div className="title">
-                React
+                {stack.head}
             </div>
         </div>
       

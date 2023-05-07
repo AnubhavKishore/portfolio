@@ -40,14 +40,14 @@ function Navbar() {
 
 
                     <div id='left-nav' className="left">
-                        <h2><a href="/">Abhishek</a></h2>
+                        <h2><Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-home" spy={true} className='home'>Abhishek</Link></h2>
 
                     </div>
 
                     <div className="right" id="right-nav">
                         <ul>
                             <li>
-                                <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-home"  spy={true} className='home'>Home</Link>
+                                <Link duration={5} smooth={true} offset={-70} activeClass='active' to="scroll-home" spy={true} className='home'>Home</Link>
 
                             </li>
                             <li>

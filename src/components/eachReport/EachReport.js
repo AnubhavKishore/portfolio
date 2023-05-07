@@ -9,7 +9,7 @@ function EachReport({content}) {
   return (
     <div className="each-report">
 
-    <div className="top around">
+    <div className="top">
         <h6 className="html-skill">{content.title}</h6>
         <p className="percent">{content.progress}</p>
 
