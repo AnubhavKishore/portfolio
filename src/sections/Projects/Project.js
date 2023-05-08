@@ -20,7 +20,7 @@ function Project() {
     const projects =[
         {
             title : "Tomato",
-            desc:"Tomato is a clone website of the zomato. It is fully responsive website for screens of all dimensions and have an amazing frontend experience.",
+            desc:"Tomato is a clone website of zomato. It is a website fully responsive for all kind of screens dimensions and have an amazing frontend experience.",
             thumImg:tomatoimg,
 
             live:"https://tomato-clone-app.netlify.app",
@@ -44,7 +44,7 @@ function Project() {
         },
         {
             title : "College Mate",
-            desc:"College Mate provides you the all the neccessaty information about the societies of the certain colleges which includes DTU, NSUT, IITD, IITD, IGDTUW",
+            desc:"College Mate provides you the all the neccessary information about the societies of some prestigious colleges of India which includes DTU, NSUT, IITD, IIITD and IGDTUW.",
             thumImg:collegemateimg,
 
             
