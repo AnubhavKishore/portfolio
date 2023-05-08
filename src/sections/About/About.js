@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.scss'
-import profilepic from '../../assets/profilepic.png'
+import aboutpic from '../../assets/aboutpic.png'
 import SecHead from '../../components/secHead/SecHead'
 import Primbtn from '../../components/Primary btn/Primbtn'
 
@@ -16,7 +16,7 @@ function About() {
 
                     <div data-aos="zoom-in" className="mid">
                         <div className="img">
-                            <img src={profilepic} alt="" />
+                            <img src={aboutpic} alt="" />
 
                         </div>
 

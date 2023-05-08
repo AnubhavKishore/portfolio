@@ -13,10 +13,7 @@ function Home() {
     return (
 
         <div id='scroll-home' className='Home'>
-            <span>
-
-
-            </span>
+           
             <div className="container">
                 <div className="content">
 

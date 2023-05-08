@@ -20,7 +20,7 @@ function Project() {
     const projects =[
         {
             title : "Tomato",
-            desc:"Tomato is a clone website of zomato. It is a website fully responsive for all kind of screens dimensions and have an amazing frontend experience.",
+            desc:"Tomato is a clone website of zomato. It is a website fully responsive for all kind of screen dimensions and have an amazing frontend experience.",
             thumImg:tomatoimg,
 
             live:"https://tomato-clone-app.netlify.app",

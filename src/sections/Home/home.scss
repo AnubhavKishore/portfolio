@@ -1,6 +1,6 @@
 .Home {
-  height: calc(100vh - var(--header-height));
   min-height: calc(100vh - var(--header-height));
+  height: calc(100vh - var(--header-height));
   overflow: hidden;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--fainter-col);
@@ -44,11 +44,10 @@
           ul {
             display: flex;
             gap: 20px;
-            i{
+            i {
               color: var(--black-col);
-
             }
-            
+
             #uil-instagram-alt:hover {
               -webkit-text-fill-color: var(--prim-btn-col);
             }
@@ -71,25 +70,26 @@
 
       .profile-img {
         img {
-          object-fit: contain;
-          height: 400px;
+          object-fit: cover;
+          animation: moving 1s infinite alternate;
+
+          transform: translateY(0px);
+          height: 450px;
         }
       }
     }
   }
 }
 
-#typewriter{
-  color:var(--prim-active-col);
+#typewriter {
+  color: var(--prim-active-col);
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   .Home {
-    min-height:  calc(fit-content - var(--header-height));
-    // height: fit-content;
+    min-height: calc(fit-content - var(--header-height));
+
+    height: fit-content;
     width: 100%;
     position: relative;
 
@@ -99,11 +99,8 @@
       flex-direction: column-reverse;
       justify-content: space-around;
       .left {
-        
+        flex: 0.8;
 
-        flex:.8;
-        
-        
         padding: 0px 5px;
         .bottom {
           .social {
@@ -114,7 +111,7 @@
         }
         .details {
           gap: 8px;
-          
+
           .head {
             overflow: hidden;
             line-height: 100%;
@@ -123,7 +120,7 @@
           .position {
             font-size: var(--media-h4-font-size);
           }
-          
+
           .desc {
             font-size: var(--media-p-font-size);
           }
@@ -144,9 +141,10 @@
 
         .profile-img {
           img {
-            width: 200px;
+            width: 400px;
             height: auto;
             // height: 280px;
+        
           }
         }
       }
@@ -154,26 +152,12 @@
   }
 }
 
+@keyframes moving {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-2px); }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 @media screen and (max-width: 470px) {
   .Home {
@@ -228,8 +212,7 @@
 
         .profile-img {
           img {
-            width: 200px;
-            height: 280px;
+            height: 350px;
           }
         }
       }
