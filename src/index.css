@@ -26,7 +26,7 @@ html {
 
   --prim-col: hsl(250, 69%, 61%);
   --prim-btn-col: hsl(250, 69%, 61%);
-  --prim-hover-col: hsl(250, 57%, 53%);
+  --prim-hover-col:  hsl(250, 69%, 61%);
   --prim-active-col: hsl(250, 100%, 72%);
   --prim-lighter-col: hsl(250, 92%, 85%);
   --body-color: hsl(250, 60%, 99%);

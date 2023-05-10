@@ -5,7 +5,7 @@ import Tech from '../stack/Tech';
 
 function EachProject({ project }) {
     return (
-        <div className='each-proj' >
+        <div className='each-proj ' >
             <div className="each-slide">
                 <div className="center left">
                     <div className="center thumb-img">
