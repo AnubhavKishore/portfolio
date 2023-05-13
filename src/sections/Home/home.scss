@@ -74,7 +74,7 @@
           animation: moving 1s infinite alternate;
 
           transform: translateY(0px);
-          height: 450px;
+          width: 450px;
         }
       }
     }
@@ -141,10 +141,9 @@
 
         .profile-img {
           img {
-            width: 400px;
+            width: 300px;
             height: auto;
             // height: 280px;
-        
           }
         }
       }
@@ -153,22 +152,24 @@
 }
 
 @keyframes moving {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-2px); }
-
-
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
 }
 
 @media screen and (max-width: 470px) {
   .Home {
-    // // min-height: calc(fit-content - var(--header-height));
+    min-height: calc(100vh - var(--header-height));
     // height: fit-content;
     width: 100%;
     position: relative;
 
     .content {
       flex-direction: column-reverse;
-      gap: 5px;
+      gap: 15px;
 
       .left {
         padding: 0px 5px;
@@ -212,7 +213,7 @@
 
         .profile-img {
           img {
-            height:280px;
+            height: 280px;
           }
         }
       }
