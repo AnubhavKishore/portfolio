@@ -5,7 +5,6 @@
   .content {
     gap: 30px;
     height: 100%;
-    
 
     .bottom {
       flex-wrap: wrap;
@@ -21,9 +20,9 @@
           grid-template-rows: 1fr auto;
           grid-template-columns: 0.7fr 3fr;
           gap: 10px;
-         .email{
-          font-size: var(--media-btn-font-size);
-         }
+          .email {
+            font-size: var(--media-btn-font-size);
+          }
 
           i {
             grid-column: 1/2;
@@ -110,13 +109,11 @@
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .contact {
     width: 100%;
     height: fit-content;
     .content {
-      
       .bottom {
         flex-direction: column;
         gap: 20px;
@@ -163,11 +160,9 @@
   }
 }
 
-
 @media screen and (max-width: 430px) {
   .contact {
     width: 100%;
     height: fit-content;
-    
   }
 }
