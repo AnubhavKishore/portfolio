@@ -14,7 +14,7 @@ function Skill({content}) {
             <div className="each-skill ">
 
                 <div onClick={handleSkillClick} className="head">
-                    <i className="uil uil-brackets-curly skill-icons"></i>
+                    <i className={content.icon}></i>
                     <h4 className="heading">
                         {content?.heading}
                     </h4>
@@ -28,7 +28,7 @@ function Skill({content}) {
                 </div>
 
 
-                <div style={{ display: active ? 'flex' : 'none' }} className="report">
+                <div style={{ height: active ? '195px' : '10px' }} className="report">
                     
                     {
                         content?.reports?.map((item,i)=>{

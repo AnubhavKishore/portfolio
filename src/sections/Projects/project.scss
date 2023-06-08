@@ -6,30 +6,17 @@
   .content {
     max-width: 97vw;
     display: flex;
-    gap: 25px;
+    gap: 40px;
     flex-direction: column;
     scroll-behavior: smooth;
 
     .slider {
-      display: flex;
       flex-direction: column;
-
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
+      gap: 50px;
+      padding: 20px 0px;
+      overflow: hidden;
       
-      .slider-controller {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-
-        i {
-          color: var(--prim-btn-col);
-
-          font-size: var(--uil0-font-size);
-        }
-      }
+     
 
   
     }
@@ -48,6 +35,7 @@
         
 
         .slider {
+          gap: 35px;
           
           .slider-controller {
             display: flex;

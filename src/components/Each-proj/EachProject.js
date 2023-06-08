@@ -3,13 +3,13 @@ import './each-proj.scss'
 import Primbtn from '../../components/Primary btn/Primbtn';
 import Tech from '../stack/Tech';
 
-function EachProject({ project }) {
+function EachProject(props) {
     return (
-        <div className='each-proj ' >
+        <div data-aos={`fade-${(props.idx)%2===0 ? 'left':'right'}`} className='each-proj ' >
             <div className="each-slide">
                 <div className="center left">
                     <div className="center thumb-img">
-                        <img src={project.thumImg} alt="" />
+                        <img src={props.project.thumImg} alt="" />
                     </div>
 
                 </div>
@@ -18,7 +18,7 @@ function EachProject({ project }) {
 
                     <div className="heading">
                         <h4 className="head">
-                            {project.title}
+                            {props.project.title}
                         </h4>
                     </div>
 
@@ -26,7 +26,7 @@ function EachProject({ project }) {
 
                     <div className="mid">
                         <p className="desc">
-                            {project.desc}
+                            {props.project.desc}
                         </p>
                         <div className="stack-used">
                             <div className="head">
@@ -35,7 +35,7 @@ function EachProject({ project }) {
                             </div>
                             <div className="logos">
                                 {
-                                    project.stackUsed.map((item, i) => {
+                                    props.project.stackUsed.map((item, i) => {
                                         return <Tech stack={item} key={i} />
                                     })
                                 }
@@ -51,11 +51,11 @@ function EachProject({ project }) {
 
 
                     <div className="buttons">
-                        <a target="_blank" rel="noreferrer" href={project.live}>
+                        <a target="_blank" rel="noreferrer" href={props.project.live}>
 
                             <Primbtn value="Live" icon={<i className="uil uil-arrow-up-right"></i>} />
                         </a>
-                        <a target="_blank" rel="noreferrer" href={project.github}>
+                        <a target="_blank" rel="noreferrer" href={props.project.github}>
 
                             <Primbtn value="GitHub" icon={<i className="uil uil-github"></i>} />
                         </a>

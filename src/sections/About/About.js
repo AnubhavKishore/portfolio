@@ -25,12 +25,12 @@ function About() {
 
                         <div className="details">
                             <div className="top">
-                                <p id="desc">
+                                <span className="center" id="desc">
                                     Hi, I am Abhishek Sharma,    undergrad student pursuing a degree in Computer Science at Delhi Technological University.
                                     Alongside my studies, I actively involve in web development projects and have attained high level of proficiency in crafting dynamic and user-friendly websites. I'm continuously learning and exploring new technologies and with each new project I strive to enhance my skills and create engaging and attractive websites.
 
 
-                                </p>
+                                </span>
 
                             </div>
 

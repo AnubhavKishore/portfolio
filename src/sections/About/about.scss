@@ -30,6 +30,12 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
+        #desc{
+          
+          
+          font-family: var(--para2-font);
+          text-align: center;
+        }
       }
       .count {
         justify-content: space-around;

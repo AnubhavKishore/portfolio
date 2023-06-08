@@ -1,24 +1,26 @@
 .each-proj {
-  cursor:auto;
-  width: 100%;
+  cursor: auto;
+  width: 95%;
   margin: 0px 5px;
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease-out;
+  box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.174);
   .each-slide {
     display: flex;
     gap: 20px;
-    // padding: 0px 10px;
 
     .left {
       flex: 1;
       margin: 0px auto;
-      .thumb-img{
+      .thumb-img {
         padding: 0px 4px;
 
         border-radius: 10px;
-        border: 1px dotted var(--prim-btn-col);
-      }
-
-      img {
-        width: 100%;
+        border: 1px solid var(--prim-btn-col);
+        img {
+          width: 100%;
+        }
       }
     }
 
@@ -45,31 +47,35 @@
         .desc {
           padding: 0px 10px 0px 0px;
         }
-        .stack-used{
+        .stack-used {
           display: flex;
           flex-direction: column;
           gap: 10px;
-          p{
+          p {
             color: var(--h1-col);
           }
-          .logos{
+          .logos {
             gap: 20px;
             display: flex;
+            flex-wrap: wrap;
           }
         }
       }
 
-      .buttons{
+      .buttons {
         display: flex;
         gap: 10px;
       }
     }
   }
+
+  &:hover {
+    box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.193);
+  }
 }
 
 @media screen and (max-width: 768px) {
   .each-proj {
-  
     .each-slide {
       padding: 0px;
       flex-direction: column;
@@ -77,6 +83,13 @@
 
       .left {
         padding: 10px;
+        .thumb-img {
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
       }
 
       .right {
@@ -97,17 +110,18 @@
 
 @media screen and (max-width: 430px) {
   .each-proj {
-    width: 95vw;
+    padding: 20px;
     .each-slide {
-      min-height: 455px;
-      gap: 30px;
+      // min-height: 435px;
+      gap: 20px;
 
       .left {
         flex: 1;
         padding: 0px;
-       
-        img {
-          width: fit-content;
+        .thumb-img {
+          img {
+            width: 100%;
+          }
         }
       }
     }

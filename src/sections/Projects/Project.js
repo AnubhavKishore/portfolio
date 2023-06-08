@@ -5,8 +5,6 @@ import EachProject from '../../components/Each-proj/EachProject';
 
 import tomatoimg from '../../assets/tomatoimg.png'
 import collegemateimg from '../../assets/collegemateimg.png'
-
-import Glider from 'react-glider';
 import 'glider-js/glider.min.css';
 
 import jsLogo from '../../assets/javascript.svg'
@@ -17,54 +15,79 @@ import htmlLogo from '../../assets/html.svg'
 
 
 function Project() {
-    const projects =[
+    const projects = [
         {
-            title : "Tomato",
-            desc:"Tomato is a clone website of zomato. It is a website fully responsive for all kind of screen dimensions and have an amazing frontend experience.",
-            thumImg:tomatoimg,
+            title: "Tomato",
+            desc: "Tomato is a clone website of zomato. It is a website fully responsive for all kind of screen dimensions and have an amazing frontend experience.",
+            thumImg: tomatoimg,
 
-            live:"https://tomato-clone-app.netlify.app",
-            github:"https://github.com/abhishek-403/tomato",
-            
+            live: "https://tomato-clone-app.netlify.app",
+            github: "https://github.com/abhishek-403/tomato",
 
-            stackUsed:[{
-                head:"HTML",
-                logo:htmlLogo
+
+            stackUsed: [{
+                head: "HTML",
+                logo: htmlLogo
             },
             {
-                head:"CSS",
-                logo:cssLogo
+                head: "CSS",
+                logo: cssLogo
             },
             {
-                head:"JavaScript",
-                logo:jsLogo
+                head: "JavaScript",
+                logo: jsLogo
             }
-        ]
+            ]
 
         },
         {
-            title : "College Mate",
-            desc:"College Mate provides you the all the neccessary information about the societies of some prestigious colleges of India which includes DTU, NSUT, IITD, IIITD and IGDTUW.",
-            thumImg:collegemateimg,
+            title: "College Mate",
+            desc: "College Mate provides you the all the neccessary information about the societies of some prestigious colleges of India which includes DTU, NSUT, IITD, IIITD and IGDTUW.",
+            thumImg: collegemateimg,
 
-            
-            live:"https://collegemate.netlify.app",
-            github:"https://github.com/abhishek-403/collegemate",
-            
-            stackUsed:[{
-                live:"https://collegemate.netlify.app/",
-                head:"HTML",
-                logo:htmlLogo
+
+            live: "https://collegemate.netlify.app",
+            github: "https://github.com/abhishek-403/collegemate",
+
+            stackUsed: [{
+                live: "https://collegemate.netlify.app/",
+                head: "HTML",
+                logo: htmlLogo
             },
             {
-                head:"CSS",
-                logo:cssLogo
+                head: "CSS",
+                logo: cssLogo
             },
             {
-                head:"JavaScript",
-                logo:jsLogo
+                head: "JavaScript",
+                logo: jsLogo
             }
-        ]
+            ]
+
+        },
+        {
+            title: "College Mate",
+            desc: "College Mate provides you the all the neccessary information about the societies of some prestigious colleges of India which includes DTU, NSUT, IITD, IIITD and IGDTUW.",
+            thumImg: collegemateimg,
+
+
+            live: "https://collegemate.netlify.app",
+            github: "https://github.com/abhishek-403/collegemate",
+
+            stackUsed: [{
+                live: "https://collegemate.netlify.app/",
+                head: "HTML",
+                logo: htmlLogo
+            },
+            {
+                head: "CSS",
+                logo: cssLogo
+            },
+            {
+                head: "JavaScript",
+                logo: jsLogo
+            }
+            ]
 
         }
     ]
@@ -80,50 +103,16 @@ function Project() {
                     <SecHead head="My Projects" subhead="Most recent work" />
 
 
-                    <div className="slider">
-                        <Glider className='glider'
-                            dots={'#dots'}
-                            arrows={{
-                                prev: '#buttonPrev',
-                                next: '#buttonNext',
-                            }}
-                            draggable
-                            hasDots
-                            hasArrows
-                            rewind
-                            scrollLock
-                            slidesToShow={1}>
-
-                            {
-                                projects.map((item,i)=>{
-                                    return(
-                                        <EachProject project={item} key={i}/>
-                                    )
-                                })
-                            }
+                    <div className="slider center">
 
 
-                            
-                        </Glider>
-                        <div className="slider-controller">
-
-                            <div id='buttonPrev' className="arrow center left-icon">
-                                <i className="uil uil-angle-left-b"></i>
-                            </div>
-                            <div id="dots">
-
-                            </div>
-                            <div id='buttonNext' className="arrow center left-icon">
-                                <i className="uil uil-angle-right-b"></i>
-                            </div>
-
-                        </div>
-
-
-
-
-
-
+                        {
+                            projects.map((item, i) => {
+                                return (
+                                    <EachProject idx={i} project={item} key={i} />
+                                )
+                            })
+                        }
                     </div>
 
 

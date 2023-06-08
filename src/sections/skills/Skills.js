@@ -9,6 +9,7 @@ function Skills() {
       {
         heading: "Frontend Developemt",
         desc: "6 months+ experience",
+        icon:"uil2 uil-brackets-curly skill-icons",
         reports: [
           {
             title: "HTML",
@@ -29,6 +30,7 @@ function Skills() {
       {
         heading: "Backend Developemt",
         desc: "3 months+ experience",
+        icon:"uil2 uil-server skill-icons",
         reports: [
           {
             title: "Node js",

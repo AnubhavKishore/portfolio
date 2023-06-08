@@ -30,6 +30,9 @@
           color: var(--allh-col);
           font-size: var(--h4-font-size);
         }
+        .desc{
+          font-family: var(--para2-font);
+        }
       }
       .bottom {
         display: flex;
@@ -162,19 +165,22 @@
 
 @media screen and (max-width: 470px) {
   .Home {
-    min-height: calc(100vh - var(--header-height));
+    height: calc(100vh - var(--header-height));
     // height: fit-content;
     width: 100%;
     position: relative;
 
     .content {
       flex-direction: column-reverse;
-      gap: 15px;
+      gap: 0px;
 
       .left {
         padding: 0px 5px;
-        min-width: auto;
+        margin-top: auto;
+        height: 100%;
+        gap: 0px;
         .bottom {
+          margin-top: auto;
           .social {
             .buttons {
               flex-direction: column;
@@ -183,7 +189,7 @@
         }
         .details {
           gap: 8px;
-
+          
           .head {
             overflow: hidden;
             line-height: 100%;
@@ -213,7 +219,7 @@
 
         .profile-img {
           img {
-            height: 280px;
+            height: 230px;
           }
         }
       }
