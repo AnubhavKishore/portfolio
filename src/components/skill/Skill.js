@@ -2,25 +2,25 @@ import React, { useState } from 'react'
 import './skill.scss'
 import EachReport from '../eachReport/EachReport';
 
-function Skill({content}) {
+function Skill(props) {
     const [active, setActive] = useState(true)
     function handleSkillClick() {
         setActive(!active);
 
     }
     return (
-        <div className="skill-overlay">
+        <div data-aos={`fade-${(props.idx)%2===0 ? 'right':'left'}`} className="skill-overlay">
 
             <div className="each-skill ">
 
                 <div onClick={handleSkillClick} className="head">
-                    <i className={content.icon}></i>
+                    <i className={props.content.icon}></i>
                     <h4 className="heading">
-                        {content?.heading}
+                        {props.content?.heading}
                     </h4>
 
                     <p className="desc">
-                        {content?.desc}
+                        {props.content?.desc}
                     </p>
                     <i className={`angle uil2 uil-angle-${active ? 'up':'down'}`}></i>
                     
@@ -31,7 +31,7 @@ function Skill({content}) {
                 <div style={{ height: active ? '195px' : '10px' }} className="report">
                     
                     {
-                        content?.reports?.map((item,i)=>{
+                        props.content?.reports?.map((item,i)=>{
                             return(
                                 <EachReport key={i} content={item} />
                             )

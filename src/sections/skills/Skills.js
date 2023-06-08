@@ -66,7 +66,7 @@ function Skills() {
             {
               dummySkill.map((item,i)=>{
                 return(
-                  <Skill key={i} content={item} />
+                  <Skill idx ={i} key={i} content={item} />
 
                 )
               })
