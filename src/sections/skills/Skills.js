@@ -7,7 +7,7 @@ function Skills() {
   const dummySkill = 
     [
       {
-        heading: "Frontend Developemt",
+        heading: "Frontend Developement",
         desc: "6 months+ experience",
         icon:"uil2 uil-brackets-curly skill-icons",
         reports: [
@@ -28,7 +28,7 @@ function Skills() {
         ]
       },
       {
-        heading: "Backend Developemt",
+        heading: "Backend Developement",
         desc: "3 months+ experience",
         icon:"uil2 uil-server skill-icons",
         reports: [

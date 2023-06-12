@@ -5,17 +5,280 @@ import Primbtn from '../../components/Primary btn/Primbtn'
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-scroll/modules'
 
+import react from '../../assets/react.svg'
+import mongodb from '../../assets/mongodb.svg'
+import node from '../../assets/node-js.svg'
+import js from '../../assets/javascript.svg'
+import redux from '../../assets/redux.svg'
+import express from '../../assets/express.svg'
+import css from '../../assets/css.svg'
+import html from '../../assets/html.svg'
+import scss from '../../assets/sass.svg'
+import boots from '../../assets/bootstrap.svg'
+import firebase from '../../assets/firebase.svg'
+
+import { useCallback } from "react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import {useSelector} from 'react-redux'
+
 
 function Home() {
 
+    const particlesInit = useCallback(async engine => {
+        // console.log(engine);
+        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+        // starting from v2 you can add only the features you need reducing the bundle size
+        await loadFull(engine);
+    }, []);
+
+    const particlesLoaded = useCallback(async container => {}, []);
 
 
-    return (
+
+    const darkTheme = useSelector(s=>s.utilsReducer.darkTheme)
+
+
+
+
+
+    return (<>
+
 
         <div id='scroll-home' className='Home'>
-           
+            <Particles
+                style={{
+                    position: "absolute",
+                    height:"100vh"
+                }}
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                options={{
+                    "fullScreen": {
+                        "enable": false,
+                        "zIndex": 0
+                    },
+                    "interactivity": {
+                        "events": {
+                            "onClick": {
+                                "enable": false,
+                            },
+                            "onDiv": {
+                                "elementId": "repulse-div",
+                                "enable": false,
+                                "mode": "repulse"
+                            },
+                            "onHover": {
+                                "enable": true,
+                                "mode": "bubble",
+                                "parallax": {
+                                    "enable": false,
+                                    "force": 60,
+                                    "smooth": 10
+                                }
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "bubble": {
+                                "distance": 100,
+                                "duration": 2,
+                                "opacity": .8,
+                                "size":20,
+                                "speed": 3
+                            },
+                            "connect": {
+                                "distance": 80,
+                                "lineLinked": {
+                                    "opacity": 0.7
+                                },
+                                "radius": 60
+                            },
+                            "grab": {
+                                "distance": 400,
+                                "lineLinked": {
+                                    "opacity": .9
+                                }
+                            },
+                            
+                            "remove": {
+                                "quantity": 2
+                            },
+                            "repulse": {
+                                "distance": 200,
+                                "duration": 0.4
+                            }
+                        }
+                    },
+                    "particles": {
+                        "color": {
+                            "value": "#ffffff"
+                        },
+                        "lineLinked": {
+                            "blink": false,
+                            "color": "#000",
+                            "consent": false,
+                            "distance": 150,
+                            "enable": false,
+                            "opacity": 0.5,
+                            "width": 1
+                        },
+                        "move": {
+                            "attract": {
+                                "enable": false,
+                                "rotate": {
+                                    "x": 600,
+                                    "y": 1200
+                                }
+                            },
+                            "bounce": false,
+                            "direction": "none",
+                            "enable": true,
+                            "outMode": "out",
+                            "random": false,
+                            "speed": 2,
+                            "straight": false
+                        },
+                        "number": {
+                            "density": {
+                                "enable": true
+                            },
+                            "limit": 0,
+                            "value": 30
+                        },
+                        "opacity": {
+                            "animation": {
+                                "enable": true,
+                                "minimumValue": 0.1,
+                                "speed": 1,
+                                "sync": false
+                            },
+                            "random": true,
+                            "value": .5
+                        },
+                        "rotate": {
+                            "animation": {
+                                "enable": true,
+                                "speed": 5,
+                                "sync": false
+                            },
+                            "direction": "random",
+                            "random": true,
+                            "value": 20
+                        },
+                        "shape": {
+                            "character": {
+                                "fill": false,
+                                "font": "Verdana",
+                                "style": "",
+                                "value": "*",
+                                "weight": "400"
+                            },
+                            "image": [
+                                {
+                                    "src": `${react}`,
+                                    "width": 40,
+                                    "height": 40
+                                },
+                                {
+                                    "src": `${redux}`,
+                                    "width":  40,
+                                    "height":  40
+                                },
+                                {
+                                    "src": `${mongodb}`,
+                                    "width": 40,
+                                    "height": 40
+                                },
+                                {
+                                    "src":`${css}`,
+                                    "width": 40,
+                                    "height": 40
+                                },
+                                {
+                                    "src": `${js}`,
+                                    "width": 40,
+                                    "height": 40
+                                },
+                                {
+                                    "src": `${express}`,
+                                    "width": 40,
+                                    "height":40
+                                },
+                                {
+                                    "src": `${node}`,
+                                    "width": 40,
+                                    "height":40
+                                },
+                                {
+                                    "src": `${html}`,
+                                    "width": 40,
+                                    "height":40
+                                },
+                                {
+                                    "src": `${scss}`,
+                                    "width": 40,
+                                    "height":40
+                                },
+                                {
+                                    "src": `${boots}`,
+                                    "width": 40,
+                                    "height":40
+                                },
+                                {
+                                    "src": `${firebase}`,
+                                    "width": 40,
+                                    "height":40
+                                }
+                            ],
+                            "polygon": {
+                                "sides": 5
+                            },
+                            "stroke": {
+                                "color": "#000000",
+                                "width": 0
+                            },
+                            "type": "image"
+                        },
+                        "size": {
+                            "animation": {
+                                "enable": false,
+                                "minimumValue": 0.1,
+                                "speed": 20,
+                                "sync": false
+                            },
+                            "random": false,
+                            "value": 20
+                        }
+                    },
+                    "polygon": {
+                        "draw": {
+                            "enable": false,
+                            "lineColor": "#ffffff",
+                            "lineWidth": 0.5
+                        },
+                        "move": {
+                            "radius": 10
+                        },
+                        "scale": 0.1,
+                        "type": "none",
+                        "url": ""
+                    },
+                    "background": {
+                        "color": `${ darkTheme? "#191627" : "#fbfbfe"}`,
+                        "image": "",
+                        "position": "50% 50%",
+                        "repeat": "no-repeat",
+                        "size": "contain"
+                    }
+                }}
+            />
+
             <div className="container">
                 <div className="content">
+
 
                     <div data-aos="fade-right" className="left" id="left-home">
                         <div className="details">
@@ -104,6 +367,7 @@ function Home() {
 
                     <div data-aos="fade-left" className="right center" id="right-home">
 
+
                         <div className="profile-img center">
 
                             <img src={profilepic} alt="" />
@@ -120,6 +384,7 @@ function Home() {
 
 
         </div >
+    </>
     )
 }
 

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -12,12 +13,14 @@
     "react-dom": "^18.2.0",
     "react-glider": "^4.0.2",
     "react-hot-toast": "^2.4.1",
+    "react-particles": "^2.10.1",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",
     "sass": "^1.62.1",
+    "tsparticles": "^2.10.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -1,9 +1,9 @@
 .Home {
-  min-height: calc(100vh - var(--header-height));
   height: calc(100vh - var(--header-height));
   overflow: hidden;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--fainter-col);
+  position: relative;
   .content {
     height: 100%;
     display: flex;
@@ -30,7 +30,7 @@
           color: var(--allh-col);
           font-size: var(--h4-font-size);
         }
-        .desc{
+        .desc {
           font-family: var(--para2-font);
         }
       }
@@ -176,7 +176,7 @@
 
       .left {
         padding: 0px 5px;
-        margin-top: auto;
+        // margin-top: auto;
         height: 100%;
         gap: 0px;
         .bottom {
@@ -189,7 +189,7 @@
         }
         .details {
           gap: 8px;
-          
+
           .head {
             overflow: hidden;
             line-height: 100%;

@@ -5,7 +5,6 @@ import Contact from "./sections/Contact/Contact";
 import Home from "./sections/Home/Home";
 import Project from "./sections/Projects/Project";
 import Skills from "./sections/skills/Skills";
-
 import './App.scss'
 import Totop from "./components/totop/Totop.js";
 import { useEffect, useState } from "react";
@@ -15,12 +14,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleSubNav } from "./redux/slices/utilsSlice.js";
 import toast, { Toaster } from 'react-hot-toast';
 
+
+
 function App() {
   const dispatch = useDispatch()
   const darkTheme = useSelector(s => s.utilsReducer.darkTheme);
   const [topActive, setTopActive] = useState(false);
 
-  const toastData = useSelector(s=>s.utilsReducer.toastData)
+  const toastData = useSelector(s => s.utilsReducer.toastData)
 
 
 
@@ -38,6 +39,7 @@ function App() {
       once: true
     })
   }, [])
+
 
   useEffect(() => {
     switch (toastData.type) {
@@ -58,6 +60,7 @@ function App() {
 
 
 
+
   window.onscroll = () => {
     dispatch(toggleSubNav(false))
     if (document.documentElement.scrollTop < 900) {
@@ -70,11 +73,17 @@ function App() {
 
 
 
+
+
   return (
     <>
+
+
       <Navbar />
-      <Toaster/>
+      <Toaster />
+      
       <main className="all-sections">
+
 
         <Home />
         <Project />

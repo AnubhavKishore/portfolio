@@ -15,7 +15,7 @@
           animation: moving2 1s infinite alternate;
 
           transform: translateY(0px);
-          width: 350px;
+          width: 290px;
         }
       }
     }
@@ -31,10 +31,11 @@
         flex-direction: column;
         gap: 25px;
         #desc{
-          
+          font-size: var(--p-font-size);
           
           font-family: var(--para2-font);
-          text-align: center;
+          text-align: justify;
+          color: var(--black-col);
         }
       }
       .count {
@@ -113,6 +114,11 @@
         }
         .details {
           gap: 20px;
+          #desc{
+            font-size: var(--media-small-font-size);
+            
+            
+          }
           .top {
             p {
               font-size: var(--media-p-font-size);

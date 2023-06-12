@@ -7,9 +7,14 @@ import tomatoimg from '../../assets/tomatoimg.png'
 import collegemateimg from '../../assets/collegemateimg.png'
 import 'glider-js/glider.min.css';
 
-import jsLogo from '../../assets/javascript.svg'
-import cssLogo from '../../assets/css.svg'
-import htmlLogo from '../../assets/html.svg'
+import react from '../../assets/react.svg'
+import mongodb from '../../assets/mongodb.svg'
+import node from '../../assets/node-js.svg'
+import js from '../../assets/javascript.svg'
+import redux from '../../assets/redux.svg'
+import express from '../../assets/express.svg'
+import css from '../../assets/css.svg'
+import scss from '../../assets/sass.svg'
 
 
 
@@ -17,79 +22,105 @@ import htmlLogo from '../../assets/html.svg'
 function Project() {
     const projects = [
         {
-            title: "Tomato",
-            desc: "Tomato is a clone website of zomato. It is a website fully responsive for all kind of screen dimensions and have an amazing frontend experience.",
+            title: "KILOGRAM",
+            desc:`Welcome to our cutting-edge website known as KILOGRAM, meticulously crafted with React, Redux, Express-js, Sass, Node-js and MongoDB. Experience unparalleled performance, seamless user interactions, and robust data storage, all harmoniously synchronized for an exquisite online journey.
+            Functionalities include Create Post, Like a post, Follow user, Create your profile with an avatar, Edit profile, Logout, Login and Signup.`,
             thumImg: tomatoimg,
 
-            live: "https://tomato-clone-app.netlify.app",
-            github: "https://github.com/abhishek-403/tomato",
+            live: "https://kilogramapp.netlify.app",
+            github: "https://github.com/abhishek-403/kilogram-client",
 
 
             stackUsed: [{
-                head: "HTML",
-                logo: htmlLogo
+                head: "React",
+                logo: react
             },
             {
-                head: "CSS",
-                logo: cssLogo
+                head: "Redux",
+                logo: redux
             },
             {
-                head: "JavaScript",
-                logo: jsLogo
+                head: "Sass",
+                logo: scss
+            },
+            {
+                head: "Node-js",
+                logo: node
+            },
+            {
+                head: "Express-js",
+                logo: express
+            },
+            {
+                head: "MongoDB",
+                logo: mongodb
             }
             ]
 
         },
         {
-            title: "College Mate",
-            desc: "College Mate provides you the all the neccessary information about the societies of some prestigious colleges of India which includes DTU, NSUT, IITD, IIITD and IGDTUW.",
+            title: "Your Notes",
+            desc: `Introducing our ingenious notes app, revolutionizing organization with its React, Redux, Express-js, and MongoDB architecture. Seamlessly sign up, login, and enjoy persistent data storage, empowering you to effortlessly capture, access, and manage your notes with unmatched convenience and reliability.
+            Functionalities include Create note, Edit note, Delete note, Logout, Login and Signup.`,
             thumImg: collegemateimg,
 
 
-            live: "https://collegemate.netlify.app",
+            live: "https://yournewnotes.netlify.app",
             github: "https://github.com/abhishek-403/collegemate",
 
             stackUsed: [{
                 live: "https://collegemate.netlify.app/",
-                head: "HTML",
-                logo: htmlLogo
+                head: "React",
+                logo: react
             },
             {
-                head: "CSS",
-                logo: cssLogo
+                head: "Redux",
+                logo: redux
             },
             {
-                head: "JavaScript",
-                logo: jsLogo
+                head: "Sass",
+                logo: scss
+            },
+            {
+                head: "Node-js",
+                logo: node
+            },
+            {
+                head: "Express-js",
+                logo: express
+            },
+            {
+                head: "MongoDB",
+                logo: mongodb
             }
             ]
 
         },
         {
-            title: "College Mate",
-            desc: "College Mate provides you the all the neccessary information about the societies of some prestigious colleges of India which includes DTU, NSUT, IITD, IIITD and IGDTUW.",
+            title: "How's the weather",
+            desc: "Indulge in the epitome of weather exploration through our exceptional app. Powered by the dynamic trio of React and open source API \"Open Weather \", it offers unparalleled precision, immersive visuals, and seamless user engagement.",
             thumImg: collegemateimg,
 
 
-            live: "https://collegemate.netlify.app",
-            github: "https://github.com/abhishek-403/collegemate",
+            live: "https://howstheweatherapp.netlify.app",
+            github: "https://github.com/abhishek-403/weather-app",
 
             stackUsed: [{
-                live: "https://collegemate.netlify.app/",
-                head: "HTML",
-                logo: htmlLogo
+                head: "React",
+                logo: react
+            },
+            {
+                head: "Javascript",
+                logo: js
             },
             {
                 head: "CSS",
-                logo: cssLogo
-            },
-            {
-                head: "JavaScript",
-                logo: jsLogo
+                logo: css
             }
             ]
 
-        }
+        },
+       
     ]
 
 

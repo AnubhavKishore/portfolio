@@ -1,13 +1,10 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Domine:wght@500&family=Geologica&family=Merriweather&family=Playfair+Display:wght@500&family=Poppins:wght@400;500&family=Roboto+Slab:wght@500&family=Salsa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Domine:wght@500&family=Geologica&family=Merriweather&family=Playfair+Display:wght@500&family=Poppins:wght@400;500&family=Roboto+Slab:wght@500&family=Salsa&display=swap");
 
 html {
   scroll-behavior: smooth;
   position: relative;
   -webkit-tap-highlight-color: transparent;
 }
-
-
 
 :root {
   --header-height: 4rem;
@@ -25,19 +22,18 @@ html {
 
   --prim-col: hsl(250, 69%, 61%);
   --prim-btn-col: hsl(250, 69%, 61%);
-  --prim-hover-col:  hsl(250, 90%, 65%);
+  --prim-hover-col: hsl(250, 90%, 65%);
   --prim-active-col: hsl(250, 100%, 72%);
   --prim-lighter-col: hsl(250, 92%, 85%);
   --body-color: hsl(250, 60%, 99%);
   --container-color: #fff;
-  --fainter-col:hsl(250deg 43% 97%);
-  
-  --nav-active-col:rgb(0, 254, 76);
+  --fainter-col: hsl(250deg 43% 97%);
+
+  --nav-active-col: rgb(0, 254, 76);
 
   --footer-col: hsl(250, 69%, 61%);
 
-  
-  --text-light-col:hsl(0, 0%, 42%);
+  --text-light-col: hsl(0, 0%, 42%);
 
   --faintest-col: hsl(250deg 21.46% 90.18%);
   --white-col: #fff;
@@ -52,7 +48,7 @@ html {
 
   --h1-font: "Roboto Slab", serif;
   --allh-font: "Merriweather", serif;
-  --para2-font: 'Geologica', sans-serif;
+  --para2-font: "Geologica", sans-serif;
   --para-font: "Domine", sans-serif;
   --h0-font-size: 2.6rem;
   --h1-font-size: 2.5rem;
@@ -74,12 +70,14 @@ html {
   --media-h4-font-size: 1.1rem;
 
   --media-h6-font-size: 0.95rem;
-  --media-p-font-size: .96rem;
+  --media-p-font-size: 0.96rem;
 
   --media-uil-font-size: 1rem;
   --media-uil2-font-size: 1.5rem;
   --media-uil0-font-size: 1.7rem;
   --media-btn-font-size: 0.9rem;
+
+  --h1-wt:800;
 }
 
 * {
@@ -99,13 +97,12 @@ body.dark-theme {
   --body-color: hsl(250, 28%, 12%);
   --container-color: hsl(250, 28%, 12%);
 
-  --fainter-col:hsl(0, 0%, 15%);
-  
-  --text-light-col:hsl(0, 0%, 80%);
+  --fainter-col: hsl(0, 0%, 15%);
+
+  --text-light-col: hsl(0, 0%, 80%);
 
   --white-col: #000000;
   --black-col: #ffffff;
-
 
   --footer-col: hsl(250, 28%, 19%);
 
@@ -117,14 +114,13 @@ body.dark-theme {
   --prim-hover-col: hsl(250, 57%, 53%);
   --prim-active-col: hsl(250, 100%, 72%);
   --prim-lighter-col: hsl(250, 92%, 85%);
-  
+
   --allh-col: hsl(250, 8%, 85%);
 
-
   --faintest-col: hsl(250deg 21.46% 90.18%);
- 
 
   --input-col: hsl(250, 28%, 25%);
+  --h1-wt:500;
 }
 
 h2,
@@ -138,6 +134,8 @@ h1 {
   font-size: var(--h1-font-size);
   color: var(--h1-col);
   font-family: var(--h1-font);
+  font-weight: var(--h1-wt);
+  
 }
 h4 {
   font-size: var(--h4-font-size);
@@ -153,7 +151,8 @@ p {
   font-size: var(--p-font-size);
 }
 
-a,Link {
+a,
+Link {
   cursor: pointer;
   color: black;
 }
@@ -181,14 +180,12 @@ li {
   height: 100%;
   /* background-color: var(--container-color); */
 }
-.flex{
+.flex {
   display: flex;
 }
-.flexcol{
+.flexcol {
   display: flex;
   flex-direction: column;
-
-
 }
 
 .center {

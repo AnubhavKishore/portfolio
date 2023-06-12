@@ -2,7 +2,7 @@
   flex: 1;
   min-width: 450px;
   padding: 10px 5px 30px 5px;
-  border-bottom: 1px solid var(--fainter-col);
+  border-right: 1px solid var(--fainter-col);
 
   .each-skill {
     display: flex;
@@ -58,5 +58,7 @@
 @media screen and (max-width: 768px) {
   .skill-overlay {
     min-width: 300px;
+    
+  border-bottom: 1px solid var(--fainter-col);
   }
 }
