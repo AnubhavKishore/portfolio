@@ -14,13 +14,19 @@
     .left {
       flex: 1;
       margin: 0px auto;
+
       .thumb-img {
+        height: 100%;
+        width: 100%;
         padding: 0px 4px;
 
         border-radius: 10px;
-        border: 1px solid var(--prim-btn-col);
         img {
-          width: 100%;
+          border-radius: 10px;
+          height: 100%;
+          border: 1px solid var(--faintest-col);
+          object-fit: contain;
+          
         }
       }
     }
@@ -47,6 +53,7 @@
         width: 100%;
         .desc {
           padding: 0px 10px 0px 0px;
+          font-family: var(--para2-font);
         }
         .stack-used {
           display: flex;

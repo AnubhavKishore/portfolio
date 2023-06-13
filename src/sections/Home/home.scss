@@ -73,11 +73,12 @@
 
       .profile-img {
         img {
-          object-fit: cover;
+          object-fit: contain;
           animation: moving 1s infinite alternate;
 
           transform: translateY(0px);
-          width: 450px;
+          width: 400px;
+
         }
       }
     }
@@ -218,8 +219,10 @@
         justify-content: center;
 
         .profile-img {
+          min-height: 255px;
           img {
-            height: 230px;
+            width: 100%;
+            height:250px;
           }
         }
       }

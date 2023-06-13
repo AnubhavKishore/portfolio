@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.scss'
-import profilepic from '../../assets/profilepic.png'
+import profilepic from '../../assets/aboutpic.png'
 import Primbtn from '../../components/Primary btn/Primbtn'
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-scroll/modules'
@@ -26,10 +26,7 @@ import {useSelector} from 'react-redux'
 function Home() {
 
     const particlesInit = useCallback(async engine => {
-        // console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
+        
         await loadFull(engine);
     }, []);
 
@@ -146,7 +143,7 @@ function Home() {
                                 "enable": true
                             },
                             "limit": 0,
-                            "value": 30
+                            "value": 40
                         },
                         "opacity": {
                             "animation": {
@@ -156,7 +153,7 @@ function Home() {
                                 "sync": false
                             },
                             "random": true,
-                            "value": .5
+                            "value": .6
                         },
                         "rotate": {
                             "animation": {
@@ -250,7 +247,7 @@ function Home() {
                                 "sync": false
                             },
                             "random": false,
-                            "value": 20
+                            "value": 25
                         }
                     },
                     "polygon": {
@@ -348,12 +345,12 @@ function Home() {
                             </div>
 
                             <div className="buttons">
-                                <Link to="/" >
+                                <a target='_blanck' href="http://surl.li/hzlce" >
 
                                     <Primbtn
                                         value="My Resume" icon={<i className="uil uil-bag"></i>} />
 
-                                </Link>
+                                </a>
                                 <Link duration={5} to='scroll-contact' offset={-70}>
                                     <Primbtn value="Contact Me" icon={<i className="uil uil-message"></i>} />
                                 </Link>

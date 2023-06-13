@@ -3,8 +3,9 @@ import './project.scss';
 import SecHead from '../../components/secHead/SecHead';
 import EachProject from '../../components/Each-proj/EachProject';
 
-import tomatoimg from '../../assets/tomatoimg.png'
-import collegemateimg from '../../assets/collegemateimg.png'
+import kilogramgif from '../../assets/kilogramgif.gif'
+import notesgif from '../../assets/notesgif.gif'
+import weathergif from '../../assets/weathergif.gif'
 import 'glider-js/glider.min.css';
 
 import react from '../../assets/react.svg'
@@ -25,7 +26,7 @@ function Project() {
             title: "KILOGRAM",
             desc:`Welcome to our cutting-edge website known as KILOGRAM, meticulously crafted with React, Redux, Express-js, Sass, Node-js and MongoDB. Experience unparalleled performance, seamless user interactions, and robust data storage, all harmoniously synchronized for an exquisite online journey.
             Functionalities include Create Post, Like a post, Follow user, Create your profile with an avatar, Edit profile, Logout, Login and Signup.`,
-            thumImg: tomatoimg,
+            thumImg: kilogramgif,
 
             live: "https://kilogramapp.netlify.app",
             github: "https://github.com/abhishek-403/kilogram-client",
@@ -62,7 +63,7 @@ function Project() {
             title: "Your Notes",
             desc: `Introducing our ingenious notes app, revolutionizing organization with its React, Redux, Express-js, and MongoDB architecture. Seamlessly sign up, login, and enjoy persistent data storage, empowering you to effortlessly capture, access, and manage your notes with unmatched convenience and reliability.
             Functionalities include Create note, Edit note, Delete note, Logout, Login and Signup.`,
-            thumImg: collegemateimg,
+            thumImg: notesgif,
 
 
             live: "https://yournewnotes.netlify.app",
@@ -99,7 +100,7 @@ function Project() {
         {
             title: "How's the weather",
             desc: "Indulge in the epitome of weather exploration through our exceptional app. Powered by the dynamic trio of React and open source API \"Open Weather \", it offers unparalleled precision, immersive visuals, and seamless user engagement.",
-            thumImg: collegemateimg,
+            thumImg: weathergif,
 
 
             live: "https://howstheweatherapp.netlify.app",

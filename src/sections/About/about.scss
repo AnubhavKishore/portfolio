@@ -11,11 +11,12 @@
       text-align: center;
       height: 105%;
       .img {
+        min-height: 355px;
         img {
           animation: moving2 1s infinite alternate;
 
           transform: translateY(0px);
-          width: 290px;
+          height: 350px;
         }
       }
     }
@@ -94,8 +95,9 @@
       
       .mid {
         .img {
+           min-height: 305px;
           img {
-            width: 250px;
+            height:300px;
           }
         }
       }
