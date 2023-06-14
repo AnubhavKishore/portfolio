@@ -23,10 +23,9 @@
         border-radius: 10px;
         img {
           border-radius: 10px;
-          width:100%;
+          width: 100%;
           border: 1px solid var(--faintest-col);
           object-fit: contain;
-          
         }
       }
     }
@@ -52,7 +51,6 @@
         gap: 20px;
         width: 100%;
         .desc {
-          padding: 0px 10px 0px 0px;
           font-family: var(--para2-font);
         }
         .stack-used {
@@ -122,6 +120,13 @@
     .each-slide {
       // min-height: 435px;
       gap: 20px;
+      .right {
+        .mid {
+          .desc {
+            text-align: justify;
+          }
+        }
+      }
 
       .left {
         flex: 1;
