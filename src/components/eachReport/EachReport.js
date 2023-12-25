@@ -9,8 +9,8 @@ function EachReport({ content }) {
   
     width: 25,
   
-    backgroundColor:(`${content.title}`==("Next Js"||"aws"))?"white":null,
-    borderRadius:(`${content.title}`==("Next Js"))?20:0,
+    backgroundColor:(`${content.title}`===("Next Js"||"aws"))?"white":null,
+    borderRadius:(`${content.title}`===("Next Js"))?20:0,
     objectFit:'cover',
 
   };
@@ -18,7 +18,7 @@ function EachReport({ content }) {
     <div className="each-report ">
       <div className="top">
         <div className="center" style={{ gap: 10 }}>
-          <img style={styleNext} className="icons " src={content.icon} />
+          <img style={styleNext} alt='' className="icons " src={content.icon} />
           <h6 className="html-skill">{content.title}</h6>
         </div>
         <div className="flex">

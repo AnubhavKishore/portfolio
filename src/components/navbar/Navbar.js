@@ -2,7 +2,7 @@ import React from "react";
 import "./navbar.scss";
 import SubNav from "../res-nav/SubNav";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleSubNav, toggleTheme } from "../../redux/slices/utilsSlice";
+import { toggleSubNav } from "../../redux/slices/utilsSlice";
 import { Link } from "react-scroll/modules";
 import { Icon } from "@iconify/react";
 function Navbar() {
@@ -16,10 +16,10 @@ function Navbar() {
     dispatch(toggleSubNav(!subNavActive));
   }
 
-  function handleTheme() {
-    dispatch(toggleTheme());
-    localStorage.removeItem("selected-dark-theme");
-  }
+  // function handleTheme() {
+  //   dispatch(toggleTheme());
+  //   localStorage.removeItem("selected-dark-theme");
+  // }
 
   return (
     <>

@@ -2,7 +2,6 @@ import React from "react";
 import "./each-proj.scss";
 import Primbtn from "../../components/Primary btn/Primbtn";
 import Tech from "../stack/Tech";
-import ReactPlayer from "react-player";
 
 function EachProject(props) {
   return (

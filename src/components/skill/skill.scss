@@ -7,7 +7,7 @@
 
   .each-skill {
     display: flex;
-    gap: 30px;
+    gap: 45px;
     flex-direction: column;
     justify-content: left;
 
@@ -64,5 +64,8 @@
   border-right:none;
     
   border-bottom: 1px solid var(--fainter-col);
+  .each-skill{
+    gap: 40px;
+  }
   }
 }

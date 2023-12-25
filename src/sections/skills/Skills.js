@@ -17,14 +17,9 @@ import git from "../../assets/giticon.svg";
 import postman from "../../assets/postmanlogo.svg";
 import nextjs from "../../assets/nextjs.svg";
 import tailwind from "../../assets/tailwindlogo.svg";
-// import kafka from "../../assets/kafka.svg";
-import kafka from "../../assets/kafkalogo.png";
 import kubernets from "../../assets/kubernets.svg";
 import docker from "../../assets/docker.svg";
-// import aws from "../../assets/aws.svg";
 import aws from "../../assets/awsicon2.png";
-import reactnative from "../../assets/tailwindlogo.svg";
-
 import ts from "../../assets/tslogo.svg";
 function Skills() {
   const dummySkill = [

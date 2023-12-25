@@ -11,10 +11,8 @@ import node from "../../assets/node-js.svg";
 import js from "../../assets/javascript.svg";
 import redux from "../../assets/redux.svg";
 import express from "../../assets/express.svg";
-import css from "../../assets/css.svg";
-import html from "../../assets/html.svg";
+
 import scss from "../../assets/sass.svg";
-import boots from "../../assets/bootstrap.svg";
 import firebase from "../../assets/firebase.svg";
 import postgres from "../../assets/postgresqlicon.svg";
 import github from "../../assets/githubicon.svg";

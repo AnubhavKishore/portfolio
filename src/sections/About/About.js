@@ -1,6 +1,5 @@
 import React from "react";
 import "./about.scss";
-import aboutpic from "../../assets/profilepic3.png";
 import SecHead from "../../components/secHead/SecHead";
 import Primbtn from "../../components/Primary btn/Primbtn";
 
