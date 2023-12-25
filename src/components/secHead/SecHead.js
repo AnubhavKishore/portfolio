@@ -5,7 +5,7 @@ import './sechead.scss'
 function SecHead(prop) {
     return (
 
-        <div className="header">
+        <div className="header ">
             <h1 className="head">
                 {prop.head}
             </h1>

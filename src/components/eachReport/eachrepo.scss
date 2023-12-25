@@ -1,13 +1,29 @@
 .each-report {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
 
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg)
+    }
+    to {
+      transform: rotate(360deg)
+    }
+  }
   .top {
+    height: auto;
+    overflow: hidden;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     h6 {
       color: var(--black-col);
+    }
+    .icons{
+      animation: rotate 4s linear infinite ;
+      margin: 4px 0px;
     }
   }
   .bottom {
@@ -19,7 +35,9 @@
     height: 5px;
     background-color: var(--prim-lighter-col);
     .progress-line {
+      transition: 2s all ease-in-out;
       border-radius: 5px;
+     
       height: 5px;
       background-color: var(--prim-btn-col);
     }

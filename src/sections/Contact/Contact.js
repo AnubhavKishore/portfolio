@@ -96,7 +96,7 @@ function Contact() {
                             <div className="each-mode hover-link">
                                 <i className="uil uil-map-marker"></i>
                                 <h4 className="txt location-txt">Location</h4>
-                                <p className="email">New-Delhi</p>
+                                <p className="email">New Delhi</p>
 
                             </div>
 
@@ -128,7 +128,7 @@ function Contact() {
 
                                 <div className="message">
                                     <label htmlFor="input-message">Message</label>
-                                    <textarea autoComplete='off' required ref={message} maxLength={600} id='input-message' cols="" rows="10"></textarea>
+                                    <textarea autoComplete='off' required ref={message} maxLength={600} id='input-message' cols="" rows="5"></textarea>
 
                                 </div>
 

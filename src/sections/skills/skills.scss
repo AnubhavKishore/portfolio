@@ -1,6 +1,8 @@
 .skills {
   // min-height: calc(100vh - var(--header-height));
 
+  // overflow: auto;
+
   padding-bottom: 30px;
   border-bottom: 1px solid var(--fainter-col);
   .content {
@@ -25,7 +27,8 @@
     height: fit-content;
     width: 100%;
     .content {
-      
+
+        gap: 20px;
       .all-skills {
         display: flex;
         flex-wrap: wrap;

@@ -10,8 +10,10 @@
   right: 0;
   max-width: 100%;
   margin: 5px;
-  box-shadow: 0px 0px 5px 0px var(--prim-lighter-col);
+  box-shadow: 0px 0px 1px 0px white;
+  
 
+  border: 1px solid #474747;
   transition: all 0.2s ease-out;
 
   .content {
@@ -19,7 +21,7 @@
       font-family: var(--para-font);
       display: grid;
 
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
 
 
       gap: 20px 10px;
@@ -27,7 +29,7 @@
         height: fit-content;
         a {
           color: var(--black-col);
-          i {
+          .uil {
             font-size: var(--uil-font-size);
           }
           display: flex;
@@ -42,12 +44,12 @@
           transition: all 0.1s ease-out;
 
           &:hover {
-            color: var(--prim-btn-col);
+            color: var(--nav-active-col);
           }
         }
         .active{
 
-          color: var(--prim-active-col);
+          color: var(--nav-active-col);
         }
 
       }

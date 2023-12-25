@@ -1,7 +1,8 @@
 .Home {
-  height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
+
   overflow: hidden;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   border-bottom: 1px solid var(--fainter-col);
   position: relative;
   .content {
@@ -38,7 +39,7 @@
         display: flex;
         flex-direction: column;
 
-        gap: 15px;
+        gap: 25px;
 
         justify-content: flex-start;
         .social {
@@ -86,16 +87,16 @@
 }
 
 #typewriter {
-  color: var(--prim-active-col);
+  color: #b2a2ff;
 }
 
 @media screen and (max-width: 768px) {
   .Home {
-    min-height: calc(fit-content - var(--header-height));
-
+    margin-top: 15px;
     height: fit-content;
     width: 100%;
     position: relative;
+    padding-bottom:30px ;
 
     .content {
       // flex-direction: column-reverse;
@@ -103,7 +104,7 @@
       flex-direction: column-reverse;
       justify-content: space-around;
       .left {
-        flex: 0.8;
+        // flex: 0.8;
 
         padding: 0px 5px;
         .bottom {
@@ -131,7 +132,8 @@
         }
 
         .bottom {
-          margin-top: auto;
+          margin-top:20px ;
+          
 
           .buttons {
             gap: 10px;
@@ -206,7 +208,7 @@
         }
 
         .bottom {
-          margin-top: auto;
+          margin-top: 20px;
 
           .buttons {
             gap: 10px;

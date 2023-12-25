@@ -28,7 +28,7 @@ function Skill(props) {
                 </div>
 
 
-                <div style={{ height: active ? '195px' : '10px' }} className="report">
+                <div style={{ height: active ? 'auto' : '0' }} className="report">
                     
                     {
                         props.content?.reports?.map((item,i)=>{

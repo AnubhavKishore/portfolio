@@ -3,6 +3,7 @@
   min-width: 450px;
   padding: 10px 5px 30px 5px;
   border-right: 1px solid var(--fainter-col);
+  transition: all 1s ease-in;
 
   .each-skill {
     display: flex;
@@ -43,13 +44,14 @@
     }
 
     .report {
-      width: 70%;
+      width: 80%;
       margin: 0px auto;
 
       display: flex;
       flex-direction: column;
       gap: 30px;
-
+    
+      // background-color: rgb(255, 255, 255);
       transition: height 0.3s ease-in;
     }
   }

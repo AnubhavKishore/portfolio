@@ -15,7 +15,7 @@ const utilsSlice = createSlice({
     name: "utilsSlice",
     initialState: {
         subNavActive: false,
-        darkTheme: localStorage.getItem('selected-dark-theme') === 'true' ? true : false,
+        darkTheme: true,
         toastData:{}
     },
 

@@ -27,11 +27,11 @@ function Footer() {
 
                                 </li>
                                 <li>
-                                    <Link duration={5} to='scroll-proj' smooth={true} offset={-70} activeClass='active' spy={true} className='projects'  >Projects</Link>
+                                    <Link duration={5} to="scroll-skills" smooth={true} offset={-70} activeClass='active' spy={true} className='about' >Skills</Link>
+
                                 </li>
                                 <li>
-                                    <Link duration={5} to="scroll-about" smooth={true} offset={-70} activeClass='active' spy={true} className='about' >About</Link>
-
+                                    <Link duration={5} to='scroll-proj' smooth={true} offset={-70} activeClass='active' spy={true} className='projects'  >Projects</Link>
                                 </li>
                             </ul>
 
@@ -57,8 +57,8 @@ function Footer() {
                                 </li>
                                 <li>
                                     <a target="_blank" rel="noreferrer"
-                                        href="https://twitter.com/abhishek_sh01">
-                                        <i className={`uil2 fa-brands fa-twitter`}></i>
+                                        href="https://twitter.com/abhishek_403">
+                                        <i className={`uil2 fa-brands fa-x-twitter`}></i>
 
                                     </a>
                                 </li>

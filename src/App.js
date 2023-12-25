@@ -87,7 +87,7 @@ function App() {
 
         <Home />
         <Project />
-        <About />
+        {/* <About /> */}
 
         <Skills />
 
