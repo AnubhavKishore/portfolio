@@ -161,7 +161,7 @@ function Home() {
                 },
                 direction: "down",
                 random: true,
-                value: 150,
+                value: 80,
               },
               shape: {
                 character: {
