@@ -30,6 +30,7 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useSelector } from "react-redux";
 
+
 function Home() {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
@@ -141,7 +142,7 @@ function Home() {
                   enable: true,
                 },
                 limit: 0,
-                value: 70,
+                value: 60,
               },
               opacity: {
                 animation: {
@@ -156,12 +157,12 @@ function Home() {
               rotate: {
                 animation: {
                   enable: true,
-                  speed: 25,
+                  speed: 5,
                   sync: false,
                 },
                 direction: "down",
                 random: true,
-                value: 80,
+                value: 40,
               },
               shape: {
                 character: {

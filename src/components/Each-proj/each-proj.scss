@@ -3,10 +3,10 @@
   width: 95%;
   margin: 0px 5px;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
   transition: all 0.3s ease-out;
   // box-shadow:4px 4px 2px #4c4c4a;
-  background-color: #1a1a1a;
+  background-color: #222222;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 25px 20px -20px;
 
 
@@ -118,7 +118,7 @@
 
 @media screen and (max-width: 430px) {
   .each-proj {
-    padding: 20px;
+    padding: 15px;
     .each-slide {
       // min-height: 435px;
       gap: 20px;
