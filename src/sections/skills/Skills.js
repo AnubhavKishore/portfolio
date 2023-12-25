@@ -55,7 +55,7 @@ function Skills() {
         },
         {
           title: "Next Js",
-          progress: "85%",
+          progress: "80%",
           icon: nextjs,
         },
       ],
@@ -87,7 +87,7 @@ function Skills() {
         },
         {
           title: "PostgreSQL",
-          progress: "70%",
+          progress: "65%",
           icon: postgres,
         },
       ],
@@ -123,17 +123,17 @@ function Skills() {
       reports: [
         {
           title: "Docker",
-          progress: "80%",
+          progress: "35%",
           icon: docker,
         },
         {
           title: "AWS",
-          progress: "80%",
+          progress: "30%",
           icon: aws,
         },
         {
           title: "Kubernets",
-          progress: "75%",
+          progress: "30%",
           icon: kubernets,
         },
         
