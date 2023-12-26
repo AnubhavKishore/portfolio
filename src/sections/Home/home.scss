@@ -48,8 +48,9 @@
           ul {
             display: flex;
             gap: 20px;
-            i {
-              color: var(--black-col);
+           
+            .icons{
+              color: white;
             }
 
             #uil-instagram-alt:hover {

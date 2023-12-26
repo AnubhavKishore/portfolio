@@ -29,7 +29,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useSelector } from "react-redux";
-
+import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 function Home() {
   const particlesInit = useCallback(async (engine) => {
@@ -238,8 +238,7 @@ function Home() {
                     width: 40,
                     height: 40,
                   },
-               
-               
+
                   {
                     src: `${js}`,
                     width: 30,
@@ -255,13 +254,13 @@ function Home() {
                     width: 40,
                     height: 40,
                   },
-               
+
                   {
                     src: `${scss}`,
                     width: 40,
                     height: 40,
                   },
-             
+
                   {
                     src: `${firebase}`,
                     width: 30,
@@ -347,7 +346,7 @@ function Home() {
                         rel="noreferrer"
                         href="https://github.com/abhishek-403"
                       >
-                        <i className="uil2 fa-brands fa-github"></i>
+                       <FaGithub   className="uil2 icons" />
                       </a>
                     </li>
                     <li>
@@ -356,7 +355,11 @@ function Home() {
                         rel="noreferrer"
                         href="https://www.linkedin.com/in/abhishek-sharma-84a827212/"
                       >
-                        <i className="uil2 fa-brands fa-linkedin"></i>
+                         <FaLinkedin
+                          
+                     
+                          className="uil2 icons "
+                        />
                       </a>
                     </li>
                     <li>
@@ -365,7 +368,13 @@ function Home() {
                         rel="noreferrer"
                         href="https://twitter.com/abhishek_403"
                       >
-                        <i className={`uil2 fa-brands fa-x-twitter`}></i>
+                        <FaXTwitter
+                          
+                     
+                          className="uil2 icons"
+                        />
+
+                        
                       </a>
                     </li>
                     <li>
@@ -374,11 +383,8 @@ function Home() {
                         rel="noreferrer"
                         href="https://www.instagram.com/abhishek._404"
                       >
-                        <i
-                          className="uil2 fa-brands fa-instagram"
-                          id="uil-instagram-alt"
-                          aria-hidden="true"
-                        ></i>
+                        <FaInstagram   className="uil2 icons" />
+                      
                       </a>
                     </li>
                   </ul>

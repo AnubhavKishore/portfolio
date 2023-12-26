@@ -12,7 +12,7 @@ function EachProject(props) {
       <div className="each-slide">
         <div className="center left">
           <div className="center thumb-img">
-            <video src={props.project.thumImg} autoPlay muted loop aboutcontrolsList="nodownload" width={'100%'} height={"100%"}/>
+            <video src={props.project.thumImg} controlsList="nodownload" autoPlay muted loop  width={'100%'} height={"100%"}/>
            
 
          
