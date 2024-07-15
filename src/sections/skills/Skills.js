@@ -1,100 +1,130 @@
 import React from "react";
-import "./skills.scss";
 import SecHead from "../../components/secHead/SecHead";
 import Skill from "../../components/skill/Skill";
+import "./skills.scss";
 
-import react from "../../assets/react.svg";
-import mongodb from "../../assets/mongodb.svg";
-import node from "../../assets/node-js.svg";
-import js from "../../assets/javascript.svg";
-import redux from "../../assets/redux.svg";
 import express from "../../assets/express.svg";
+import js from "../../assets/javascript.svg";
+import node from "../../assets/node-js.svg";
+import react from "../../assets/react.svg";
 
-import firebase from "../../assets/firebase.svg";
-import postgres from "../../assets/postgresqlicon.svg";
+import aws from "../../assets/awsicon2.png";
+import docker from "../../assets/docker.svg";
 import github from "../../assets/githubicon.svg";
 import git from "../../assets/giticon.svg";
-import postman from "../../assets/postmanlogo.svg";
-import nextjs from "../../assets/nextjs.svg";
-import tailwind from "../../assets/tailwindlogo.svg";
 import kubernets from "../../assets/kubernets.svg";
-import docker from "../../assets/docker.svg";
-import aws from "../../assets/awsicon2.png";
-import ts from "../../assets/tslogo.svg";
+import postman from "../../assets/postmanlogo.svg";
+import tailwind from "../../assets/tailwindlogo.svg";
+import html from "../../assets/html.svg";
+import css from "../../assets/css.svg";
+import bootstrap from "../../assets/bootstrap.svg";
+import postgre from "../../assets/postgresqlicon.svg";
+
+
+
+
 function Skills() {
   const dummySkill = [
     {
       heading: "Frontend Developement",
-      desc: "1 year+ experience",
+      desc: "7 months+ experience",
       icon: "uil2 uil-brackets-curly skill-icons",
       reports: [
+        // {
+        //   title: "HTML",
+        //   progress: "90%",
+        //   icon: html,
+        // },
+        // {
+        //   title: "CSS",
+        //   progress: "85%",
+        //   icon: css,
+        // },
+        {
+          title: "HTML",
+          progress: "90%",
+          icon: html
+        },
+        {
+          title: "CSS",
+          progress: "85%",
+          icon: css
+        },
+        {
+          title: "Bootstrap",
+          progress: "90%",
+          icon: bootstrap
+        },
         {
           title: "JavaScript",
           progress: "85%",
           icon: js,
         },
-        {
-          title: "TypeScript",
-          progress: "70%",
-          icon: ts,
-        },
-        {
-          title: "React Js",
-          progress: "90%",
-          icon: react,
-        },
-        {
-          title: "Redux",
-          progress: "85%",
-          icon: redux,
-        },
+        // {
+        //   title: "TypeScript",
+        //   progress: "70%",
+        //   icon: ts,
+        // },
+        
+        // {
+        //   title: "Redux",
+        //   progress: "85%",
+        //   icon: redux,
+        // },
         {
           title: "Tailwind",
-          progress: "85%",
+          progress: "75%",
           icon: tailwind,
         },
         {
-          title: "Next Js",
-          progress: "80%",
-          icon: nextjs,
+          title: "React Js",
+          progress: "60%",
+          icon: react,
         },
+        
+        // {
+        //   title: "Next Js",
+        //   progress: "80%",
+        //   icon: nextjs,
+        // },
       ],
     },
     {
       heading: "Backend Developement",
-      desc: "10 months+ experience",
+      desc: "3.5 months+ experience",
       icon: "uil2 uil-server skill-icons",
       reports: [
         {
           title: "Node Js",
-          progress: "75%",
+          progress: "65%",
           icon: node,
         },
         {
           title: "Express",
-          progress: "80%",
+          progress: "60%",
           icon: express,
         },
-        {
-          title: "MongoDB",
-          progress: "80%",
-          icon: mongodb,
-        },
-        {
-          title: "Firebase",
-          progress: "70%",
-          icon: firebase,
-        },
+        
+        // {
+        //   title: "MongoDB",
+        //   progress: "80%",
+        //   icon: mongodb,
+        // },
+        // {
+        //   title: "Firebase",
+        //   progress: "70%",
+        //   icon: firebase,
+        // },
         {
           title: "PostgreSQL",
-          progress: "65%",
-          icon: postgres,
+          progress: "80%",
+          icon: postgre,
         },
       ],
     },
     {
       heading: "Tools that I use",
-      desc: "6 months+ experience",
+      desc: "1 month+ experience",
       icon: "uil2 uil-cog skill-icons",
       reports: [
         {
@@ -104,12 +134,12 @@ function Skills() {
         },
         {
           title: "Postman",
-          progress: "80%",
+          progress: "30%",
           icon: postman,
         },
         {
           title: "Git",
-          progress: "80%",
+          progress: "60%",
           icon: git,
         },
        
@@ -121,22 +151,18 @@ function Skills() {
       desc: "Learning",
       icon: "uil2 uil-book-open skill-icons",
       reports: [
-        {
-          title: "Docker",
-          progress: "35%",
-          icon: docker,
-        },
-        {
-          title: "AWS",
-          progress: "30%",
-          icon: aws,
-        },
-        {
-          title: "Kubernets",
-          progress: "30%",
-          icon: kubernets,
-        },
         
+        {
+          title: "PostgreSQL",
+          progress: "10%", 
+          icon: postgre,
+        },
+        {
+          title: "React Js",
+          progress: "20%",
+          icon: react,
+        },
+             
        
        
       ],

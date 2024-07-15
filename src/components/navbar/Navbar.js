@@ -37,7 +37,7 @@ function Navbar() {
                   spy={true}
                   className="home"
                 >
-                  Abhishek
+                  Anubhav
                 </Link>
               </h2>
             </div>

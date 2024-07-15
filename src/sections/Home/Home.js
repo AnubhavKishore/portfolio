@@ -315,7 +315,7 @@ function Home() {
           <div className="content">
             <div data-aos="fade-right" className="left" id="left-home">
               <div className="details">
-                <h1 className="head">Hi, I'm Abhishek Sharma</h1>
+                <h1 className="head">Hi, I'm Anubhav Kishore</h1>
                 <h4 className="position">
                   I'm{" "}
                   <span id="typewriter">
@@ -331,8 +331,8 @@ function Home() {
                 </h4>
                 <p className="desc">
                   Passionate undergrad computer science student at Delhi
-                  Technological University (DTU). A Full Stack MERN developer
-                  with hands-on experience and a solid understanding of web
+                  Technological University (DTU). A Frontend Web Developer
+                  with hands-on experience and a few understanding of backend
                   development.
                 </p>
               </div>
@@ -344,7 +344,7 @@ function Home() {
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://github.com/abhishek-403"
+                        href="https://github.com/AnubhavKishore"
                       >
                        <FaGithub   className="uil2 icons" />
                       </a>
@@ -353,7 +353,7 @@ function Home() {
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.linkedin.com/in/abhishek-sharma-84a827212/"
+                        href="https://www.linkedin.com/in/anubhav-kishore-72444425a/"
                       >
                          <FaLinkedin
                           
@@ -366,7 +366,7 @@ function Home() {
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://twitter.com/abhishek_403"
+                        href="https://twitter.com/anubhav2373"
                       >
                         <FaXTwitter
                           
@@ -381,7 +381,7 @@ function Home() {
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.instagram.com/abhishek._404"
+                        href="https://www.instagram.com/anubhav_k_23/"
                       >
                         <FaInstagram   className="uil2 icons" />
                       
@@ -393,7 +393,7 @@ function Home() {
                 <div className="buttons">
                   <a
                     target="_blanck"
-                    href="https://docs.google.com/document/d/1TqYsnkAJf9u_oeFVC06Lq7eV5y5CSA_drl1Qo9tGOsE/edit?usp=sharing"
+                    href="https://drive.google.com/drive/folders/1PFQ6rXEzpLkHguNWxNo_79-5lPd0rqpR?usp=drive_link"
                   >
                     <Primbtn
                       value="My Resume"

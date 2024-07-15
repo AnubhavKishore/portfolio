@@ -19,7 +19,7 @@ function About() {
               <div className="details">
                 <div className="top">
                   <span className="center" id="desc">
-                    Hi, I am Abhishek Sharma, undergrad student pursuing a
+                    Hi, I am Anubhav Kishore, undergrad student pursuing a
                     degree in Computer Science at Delhi Technological
                     University. Alongside my studies, I actively involve in web
                     development projects and have attained high level of
@@ -37,7 +37,7 @@ function About() {
                         <a
                           target="_blank"
                           rel="noreferrer"
-                          href="https://github.com/abhishek-403"
+                          href="https://github.com/AnubhavKishore"
                         >
                           <i className="uil2 fa-brands fa-github"></i>
                         </a>
@@ -46,7 +46,7 @@ function About() {
                         <a
                           target="_blank"
                           rel="noreferrer"
-                          href="https://www.linkedin.com/in/abhishek-sharma-84a827212/"
+                          href="https://www.linkedin.com/in/anubhav-kishore-72444425a/"
                         >
                           <i className="uil2 fa-brands fa-linkedin"></i>
                         </a>
@@ -55,7 +55,7 @@ function About() {
                         <a
                           target="_blank"
                           rel="noreferrer"
-                          href="https://twitter.com/abhishek_sh01"
+                          href="https://twitter.com/anubhav2373"
                         >
                           <i className={`uil2 fa-brands fa-twitter`}></i>
                         </a>
@@ -64,7 +64,7 @@ function About() {
                         <a
                           target="_blank"
                           rel="noreferrer"
-                          href="https://www.instagram.com/abhishek._404"
+                          href="https://www.instagram.com/anubhav_k_23/"
                         >
                           <i
                             className="uil2 fa-brands fa-instagram"

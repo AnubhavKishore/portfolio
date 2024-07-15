@@ -11,7 +11,7 @@ function Footer() {
 
                         <div className="left flex-col">
                             <h1 className="name">
-                                Abhishek
+                                Anubhav
                             </h1>
                             <h6 className="position">
                                 Web Developer
@@ -42,7 +42,7 @@ function Footer() {
                                 <li>
                                     <a
                                         target="_blank" rel="noreferrer"
-                                        href="https://github.com/abhishek-403"
+                                        href="https://github.com/AnubhavKishore"
                                     >
                                         <i className="uil2 fa-brands fa-github"></i>
 
@@ -50,21 +50,21 @@ function Footer() {
                                 </li>
                                 <li>
                                     <a target="_blank" rel="noreferrer"
-                                        href="https://www.linkedin.com/in/abhishek-sharma-84a827212/">
+                                        href="https://www.linkedin.com/in/anubhav-kishore-72444425a/">
                                         <i className="uil2 fa-brands fa-linkedin"></i>
 
                                     </a>
                                 </li>
                                 <li>
                                     <a target="_blank" rel="noreferrer"
-                                        href="https://twitter.com/abhishek_403">
+                                        href="https://twitter.com/anubhav2373">
                                         <i className={`uil2 fa-brands fa-x-twitter`}></i>
 
                                     </a>
                                 </li>
                                 <li>
                                     <a target="_blank" rel="noreferrer"
-                                        href="https://www.instagram.com/abhishek._404">
+                                        href="https://www.instagram.com/anubhav_k_23/">
                                         <i
                                             className='uil2 fa-brands fa-instagram'
 
@@ -79,7 +79,7 @@ function Footer() {
 
                     <div className="bottom center">
                         <span className="copytight">
-                            Created by Abhishek Sharma
+                            Created by Anubhav Kishore
                         </span>
 
                     </div>

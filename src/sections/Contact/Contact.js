@@ -89,7 +89,7 @@ function Contact() {
                             <div className="each-mode hover-link">
                                 <i className="uil uil-envelope "></i>
                                 <h4 className="txt email-txt">Email</h4>
-                                <p className="email">abhishek605404@gmail.com</p>
+                                <p className="email">anubhavkishore023@gmail.com</p>
 
                             </div>
 
