@@ -330,10 +330,12 @@ function Home() {
                   </span>
                 </h4>
                 <p className="desc">
-                  Passionate undergrad computer science student at Delhi
+                  {/* Passionate undergrad computer science student at Delhi
                   Technological University (DTU). A Frontend Web Developer
                   with hands-on experience and a few understanding of backend
-                  development.
+                  development. */}
+                  Passionate undergrad computer science student at Delhi
+                  Technological University (DTU).Full-stack web developer with expertise in building dynamic and user-friendly web applications. Adept at both front-end (ReactJS, NextJS) and back-end (NodeJS, ExpressJS) development, leveraging Appwrite for robust functionalities and building interactive experiences. 
                 </p>
               </div>
 
@@ -393,7 +395,7 @@ function Home() {
                 <div className="buttons">
                   <a
                     target="_blanck"
-                    href="https://drive.google.com/drive/folders/1PFQ6rXEzpLkHguNWxNo_79-5lPd0rqpR?usp=drive_link"
+                    href="https://drive.google.com/file/d/1mQJI15FEvOMHAcLBhrhXvSNzSEDVgdSm/view?usp=sharing"
                   >
                     <Primbtn
                       value="My Resume"
