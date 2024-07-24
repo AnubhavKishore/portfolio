@@ -14,11 +14,15 @@ import react from "../../assets/react.svg";
 import mongodb from "../../assets/mongodb.svg";
 import node from "../../assets/node-js.svg";
 import js from "../../assets/javascript.svg";
+import next from "../../assets/nextjs.svg"
 import redux from "../../assets/redux.svg";
+import appwrite from "../../assets/appwrite.svg"
 import express from "../../assets/express.svg";
 import css from "../../assets/css.svg";
 import scss from "../../assets/sass.svg";
+import tslogo from "../../assets/tslogo.svg"
 import tailwind from "../../assets/tailwindlogo.svg";
+import postgre from "../../assets/postgresqlicon.svg"
 import html from "../../assets/html.svg";
 import bootstrap from "../../assets/bootstrap.svg";
 
@@ -28,32 +32,50 @@ import bootstrap from "../../assets/bootstrap.svg";
 function Project() {
   const projects = [
     {
-      title: "Simon Game",
+      title: "TechTalkToday",
       // desc: `A full-stack notes app, built with React, Redux, Express.js, and MongoDB. Ensuring secure data storage, it offers seamless signup and login functionalities, facilitating efficient note capture and retrieval for a comprehensive and user-friendly experience.`,
-      desc: `A classic memory and pattern recognisation game played in the US, built with HTML, CSS, Javascript, Tailwind. Ensuring the user input and increase the level of the game.Usage of event listeners,sound handling, animation, keyboard support and volume control.`,
+      desc: `Leveraged ReactJS for a performant and user-friendly frontend, ensuring a seamless user experience. Implemented Appwrite for robust backend functionalities, including secure user authentication (sign-up, login, logout), efficient database management for news articles, and scalable file management for media content.`,
       thumImg: notesgif,
 
-      // live: "https://yournewnotes.netlify.app",
-      // github: "https://github.com/abhishek-403/collegemate",
+      live: "https://tech-talk-today.vercel.app/",
+      github: "https://github.com/AnubhavKishore/TechTalkToday",
 
       stackUsed: [
 
+        // {
+        //   head: "HTML",
+        //   logo: html,
+        // }, 
+        // {
+        //   head: "CSS",
+        //   logo: css,
+        // },
+        // {
+        //   head: "Javascript",
+        //   logo: js,
+        // },
         {
-          head: "HTML",
-          logo: html,
-        }, 
-        {
-          head: "CSS",
-          logo: css,
-        },
-        {
-          head: "Javascript",
-          logo: js,
-        },
-        {
-          head: "Tailwind",
-          logo: tailwind,
-        },
+          // live: "https://collegemate.netlify.app/",
+          head: "React",
+          logo: react,
+      },
+      {
+        head: "Appwrite",
+        logo: appwrite,
+      },
+      {
+        head: "Javascript",
+        logo: js,
+      },
+      {
+          head: "Redux",
+          logo: redux,
+      },
+      {
+        head: "Tailwind",
+        logo: tailwind,
+      },
+
         // {
         //   live: "https://collegemate.netlify.app/",
         //   head: "React",
@@ -82,26 +104,40 @@ function Project() {
       ],
     },
     {
-      title: "Drum Kit",
-      desc: "A fun website to play with the different types of drum.Built with html, css, javascript.Usage of click, keypress,random functions of JS. Stylised design and easy to use for every user.",
+      title: "MusicalMinds",
+      desc: "Utilized NextJS for efficient server-side rendering, ensuring a fast and dynamic user experience and Employed TypeScript for improved code maintainability and type safety.Leveraged Aceternity UI, a collection of modern and visually-appealing React components built with Tailwind CSS and Framer Motion. ",
       thumImg: weathergif,
 
       // live: "https://howstheweatherapp.netlify.app",
-      // github: "https://github.com/abhishek-403/weather-app",
+      github: "https://github.com/AnubhavKishore/MusicalMinds",
 
       stackUsed: [
+        // {
+        //   head: ":HTML",
+        //   logo: html,
+        // },
+        
         {
-          head: ":HTML",
-          logo: html,
+          head: "NextJs",
+          logo: next,
         },
         {
-          head: "Javascript",
-          logo: js,
+          head: "Typescript",
+          logo: tslogo,
         },
         {
-          head: "CSS",
-          logo: css,
+          head: "Tailwind",
+          logo: tailwind,
         },
+        {
+            head: "Javascript",
+            logo: js,
+        },
+
+        // {
+        //   head: "CSS",
+        //   logo: css,
+        // },
       ],
     },
     {
@@ -111,7 +147,7 @@ function Project() {
       thumImg: kilogramvid,
 
       // live: "https://kilogramapp.netlify.app",
-      // github: "https://github.com/abhishek-403/kilogram-client",
+      github: "https://github.com/AnubhavKishore/MapMyTrip",
 
       stackUsed: [
         // {
@@ -131,9 +167,17 @@ function Project() {
           logo: js,
         },
         {
+          head: "Postgre",
+          logo: postgre,
+        },
+        {
           head: "Tailwind",
           logo: tailwind,
         },
+        {
+            head: "CSS",
+            logo: css,
+        }, 
         // {
         //   head: "React",
         //   logo: react,

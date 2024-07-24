@@ -11,12 +11,17 @@ import react from "../../assets/react.svg";
 import aws from "../../assets/awsicon2.png";
 import docker from "../../assets/docker.svg";
 import github from "../../assets/githubicon.svg";
+import next from "../../assets/nextjs.svg"
+import tslogo from "../../assets/tslogo.svg"
+import appwrite from "../../assets/appwrite.svg"
 import git from "../../assets/giticon.svg";
+import mongodb from "../../assets/mongodb.svg"
 import kubernets from "../../assets/kubernets.svg";
 import postman from "../../assets/postmanlogo.svg";
 import tailwind from "../../assets/tailwindlogo.svg";
 import html from "../../assets/html.svg";
 import css from "../../assets/css.svg";
+import redux from "../../assets/redux.svg"
 import bootstrap from "../../assets/bootstrap.svg";
 import postgre from "../../assets/postgresqlicon.svg";
 
@@ -40,25 +45,30 @@ function Skills() {
         //   progress: "85%",
         //   icon: css,
         // },
-        {
-          title: "HTML",
-          progress: "90%",
-          icon: html
-        },
-        {
-          title: "CSS",
-          progress: "85%",
-          icon: css
-        },
-        {
-          title: "Bootstrap",
-          progress: "90%",
-          icon: bootstrap
-        },
+        // {
+        //   title: "HTML",
+        //   progress: "90%",
+        //   icon: html
+        // },
+        // {
+        //   title: "CSS",
+        //   progress: "85%",
+        //   icon: css
+        // },
+        // {
+        //   title: "Bootstrap",
+        //   progress: "90%",
+        //   icon: bootstrap
+        // },
         {
           title: "JavaScript",
           progress: "85%",
           icon: js,
+        },
+        {
+          title: "React Js",
+          progress: "75%",
+          icon: react,
         },
         // {
         //   title: "TypeScript",
@@ -66,21 +76,26 @@ function Skills() {
         //   icon: ts,
         // },
         
-        // {
-        //   title: "Redux",
-        //   progress: "85%",
-        //   icon: redux,
-        // },
+        {
+          title: "Redux",
+          progress: "80%",
+          icon: redux,
+        },
         {
           title: "Tailwind",
-          progress: "75%",
+          progress: "80%",
           icon: tailwind,
         },
         {
-          title: "React Js",
-          progress: "60%",
-          icon: react,
+          title: "Bootstrap",
+          progress: "90%",
+          icon: bootstrap
         },
+        // {
+        //   title: "React Js",
+        //   progress: "60%",
+        //   icon: react,
+        // },
         
         // {
         //   title: "Next Js",
@@ -96,20 +111,25 @@ function Skills() {
       reports: [
         {
           title: "Node Js",
-          progress: "65%",
+          progress: "70%",
           icon: node,
         },
         {
           title: "Express",
-          progress: "60%",
+          progress: "80%",
           icon: express,
         },
         
-        // {
-        //   title: "MongoDB",
-        //   progress: "80%",
-        //   icon: mongodb,
-        // },
+        {
+          title: "MongoDB",
+          progress: "80%",
+          icon: mongodb,
+        },
+        {
+          title: "Appwrite",
+          progress: "75%",
+          icon: appwrite,
+        },
         // {
         //   title: "Firebase",
         //   progress: "70%",
@@ -129,17 +149,17 @@ function Skills() {
       reports: [
         {
           title: "Github",
-          progress: "75%",
+          progress: "85%",
           icon: github,
         },
         {
           title: "Postman",
-          progress: "30%",
+          progress: "70%",
           icon: postman,
         },
         {
           title: "Git",
-          progress: "60%",
+          progress: "75%",
           icon: git,
         },
        
@@ -152,15 +172,25 @@ function Skills() {
       icon: "uil2 uil-book-open skill-icons",
       reports: [
         
+        // {
+        //   title: "PostgreSQL",
+        //   progress: "10%", 
+        //   icon: postgre,
+        // },
+        // {
+        //   title: "React Js",
+        //   progress: "20%",
+        //   icon: react,
+        // },
         {
-          title: "PostgreSQL",
-          progress: "10%", 
-          icon: postgre,
+            title: "Next Js",
+            progress: "30%",
+            icon: next,
         },
         {
-          title: "React Js",
-          progress: "20%",
-          icon: react,
+            title: "TypeScript",
+            progress: "40%",
+            icon: tslogo,
         },
              
        

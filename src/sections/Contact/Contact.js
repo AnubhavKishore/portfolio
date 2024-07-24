@@ -32,7 +32,7 @@ function Contact() {
 
         }
         try {
-             await emailjs.send("service_uirr5ib", "template_hviv7tl", form,"BfLLGzTUgs3wiNmk6")
+             await emailjs.send("service_fe5pbie", "template_cmav8db", form,"fMWBz28P8dcGA0Eq7")
 
             name.current.value = "";
             email.current.value = "";
