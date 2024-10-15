@@ -395,7 +395,7 @@ function Home() {
                 <div className="buttons">
                   <a
                     target="_blanck"
-                    href="https://drive.google.com/file/d/1mQJI15FEvOMHAcLBhrhXvSNzSEDVgdSm/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1mQJI15FEvOMHAcLBhrhXvSNzSEDVgdSm/view?usp=drive_link"
                   >
                     <Primbtn
                       value="My Resume"

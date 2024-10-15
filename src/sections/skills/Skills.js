@@ -25,8 +25,9 @@ import redux from "../../assets/redux.svg"
 import bootstrap from "../../assets/bootstrap.svg";
 import postgre from "../../assets/postgresqlicon.svg";
 
-
-
+import convex from "../../assets/convex_dev_svg.svg"
+import shadcn from "../../assets/shadcn_svg.svg"
+import python from "../../assets/python_logo_only.svg"
 
 function Skills() {
   const dummySkill = [
@@ -91,6 +92,11 @@ function Skills() {
           progress: "90%",
           icon: bootstrap
         },
+        {
+          title: "Shadcn UI",
+          progress: "75%",
+          icon: shadcn
+        },
         // {
         //   title: "React Js",
         //   progress: "60%",
@@ -140,6 +146,11 @@ function Skills() {
           progress: "80%",
           icon: postgre,
         },
+        {
+          title : "Convex",
+          progress: "75%",
+          icon: convex
+        }
       ],
     },
     {
@@ -192,6 +203,11 @@ function Skills() {
             progress: "40%",
             icon: tslogo,
         },
+        {
+          title: "Python",
+          progress: "50%",
+          icon: python
+        }
              
        
        

@@ -5,7 +5,8 @@ import EachProject from "../../components/Each-proj/EachProject";
 
 
 import kilogramvid from "../../assets/Kilogramvid.mp4";
-
+import WipeItVideo from "../../assets/WipeItVideo.mp4";
+import TechVideo from "../../assets/TechVideo.mp4";
 import notesgif from "../../assets/yournewnotesvid.mp4";
 import weathergif from "../../assets/howstheweathervid.mp4";
 import "glider-js/glider.min.css";
@@ -17,6 +18,8 @@ import js from "../../assets/javascript.svg";
 import next from "../../assets/nextjs.svg"
 import redux from "../../assets/redux.svg";
 import appwrite from "../../assets/appwrite.svg"
+import convex from "../../assets/convex_dev_svg.svg"
+import shadcn from "../../assets/shadcn_svg.svg"
 import express from "../../assets/express.svg";
 import css from "../../assets/css.svg";
 import scss from "../../assets/sass.svg";
@@ -32,10 +35,100 @@ import bootstrap from "../../assets/bootstrap.svg";
 function Project() {
   const projects = [
     {
+      title: "WipeIt",
+      // desc: `A full-stack notes app, built with React, Redux, Express.js, and MongoDB. Ensuring secure data storage, it offers seamless signup and login functionalities, facilitating efficient note capture and retrieval for a comprehensive and user-friendly experience.`,
+      desc: `Utilized Next.js for server-side rendering and optimized routing in a high-performance web application. Leveraged TypeScript and Tailwind CSS for rapid UI development, while Convex managed a database for over 1,000 concurrent users. Integrated Google authentication and enabled seamless CRUD operations for secure file handling, enhancing user experience.
+
+`,
+      thumImg: WipeItVideo,
+
+      live: "https://tech-talk-today.vercel.app/",
+      github: "https://github.com/AnubhavKishore/TechTalkToday",
+
+      stackUsed: [
+
+        // {
+        //   head: "HTML",
+        //   logo: html,
+        // }, 
+        // {
+        //   head: "CSS",
+        //   logo: css,
+        // },
+        // {
+        //   head: "Javascript",
+        //   logo: js,
+        // },
+        {
+          head: "NextJs",
+          logo: next,
+        },
+        {
+          head: "Typescript",
+          logo: tslogo,
+        },
+        {
+          head: "Convex",
+          logo: convex,
+        },
+        {
+          head: "Shadcn",
+          logo: shadcn,
+        },
+      //   {
+      //     // live: "https://collegemate.netlify.app/",
+      //     head: "React",
+      //     logo: react,
+      // },
+      // {
+      //   head: "Appwrite",
+      //   logo: appwrite,
+      // },
+      {
+        head: "Javascript",
+        logo: js,
+      },
+      // {
+      //     head: "Redux",
+      //     logo: redux,
+      // },
+      {
+        head: "Tailwind",
+        logo: tailwind,
+      },
+
+        // {
+        //   live: "https://collegemate.netlify.app/",
+        //   head: "React",
+        //   logo: react,
+        // },
+        // {
+        //   head: "Redux",
+        //   logo: redux,
+        // },
+        // {
+        //   head: "Sass",
+        //   logo: scss,
+        // },
+        // {
+        //   head: "Node-js",
+        //   logo: node,
+        // },
+        // {
+        //   head: "Express-js",
+        //   logo: express,
+        // },
+        // {
+        //   head: "MongoDB",
+        //   logo: mongodb,
+        // },
+      ],
+    },
+    {
       title: "TechTalkToday",
       // desc: `A full-stack notes app, built with React, Redux, Express.js, and MongoDB. Ensuring secure data storage, it offers seamless signup and login functionalities, facilitating efficient note capture and retrieval for a comprehensive and user-friendly experience.`,
       desc: `Leveraged ReactJS for a performant and user-friendly frontend, ensuring a seamless user experience. Implemented Appwrite for robust backend functionalities, including secure user authentication (sign-up, login, logout), efficient database management for news articles, and scalable file management for media content.`,
-      thumImg: notesgif,
+      thumImg: TechVideo,
 
       live: "https://tech-talk-today.vercel.app/",
       github: "https://github.com/AnubhavKishore/TechTalkToday",
